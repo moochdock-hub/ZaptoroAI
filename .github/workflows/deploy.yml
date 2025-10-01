@@ -19,8 +19,8 @@ jobs:
         server: ${{ secrets.HOSTINGER_HOST }}
         username: ${{ secrets.HOSTINGER_USER }}
         password: ${{ secrets.HOSTINGER_PASSWORD }}
-        port: ${{ secrets.HOSTINGER_PORT }}
-        server-dir: ${{ secrets.HOSTINGER_TARGET }}
+        port: 21
+        server-dir: /public_html/
         exclude: |
           **/.git*
           **/.git*/**
