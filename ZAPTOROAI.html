@@ -301,11 +301,30 @@
             background: linear-gradient(45deg, rgba(255, 107, 53, 0.8), rgba(0, 212, 255, 0.6));
         }
         
-        /* Hero Video Optimization */
-        .hero-video {
-            transform: scale(1.05);
-            filter: blur(0.5px);
-            transition: all 0.3s ease;
+        /* Enhanced Hero Background Animations */
+        @keyframes gradient-x {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        @keyframes tech-pulse {
+            0%, 100% { 
+                opacity: 0.2; 
+                transform: scale(1);
+            }
+            50% { 
+                opacity: 0.8; 
+                transform: scale(1.1);
+            }
+        }
+        
+        .animate-gradient-x {
+            background-size: 400% 400%;
+            animation: gradient-x 15s ease infinite;
         }
         
         .hero-section {
@@ -572,28 +591,40 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-        <!-- Optimized Background Video -->
+        <!-- Dynamic Animated Background -->
         <div class="absolute inset-0 z-0">
-            <!-- Static background as primary -->
-            <div class="absolute inset-0 bg-gradient-to-br from-dark via-primary/5 to-dark"></div>
+            <!-- Primary animated gradient background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-dark via-primary/8 to-accent/5 animate-gradient-x"></div>
             
-            <!-- Video as subtle overlay -->
-            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-20 scale-105" style="object-position: center center;" poster="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=crop">
-                <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
-                <!-- Fallback to gradient if video fails -->
-            </video>
+            <!-- Moving tech pattern overlay -->
+            <div class="absolute inset-0 opacity-30" style="background-image: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\"><defs><pattern id=\"grid\" width=\"60\" height=\"60\" patternUnits=\"userSpaceOnUse\"><path d=\"M 60 0 L 0 0 0 60\" fill=\"none\" stroke=\"%2300d4ff\" stroke-width=\"0.5\" opacity=\"0.3\"/></pattern></defs><rect width=\"100%25\" height=\"100%25\" fill=\"url(%23grid)\"/></svg>'); animation: float 20s ease-in-out infinite;"></div>
             
-            <!-- Cohesive overlay -->
-            <div class="absolute inset-0 bg-gradient-to-br from-dark/60 via-transparent to-dark/80"></div>
+            <!-- Particle effect simulation with CSS -->
+            <div class="absolute inset-0">
+                <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping opacity-40"></div>
+                <div class="absolute top-3/4 right-1/4 w-2 h-2 bg-accent rounded-full animate-ping opacity-30" style="animation-delay: 1s;"></div>
+                <div class="absolute bottom-1/4 left-3/4 w-2 h-2 bg-primary rounded-full animate-ping opacity-50" style="animation-delay: 2s;"></div>
+                <div class="absolute top-1/2 right-1/2 w-2 h-2 bg-accent rounded-full animate-ping opacity-25" style="animation-delay: 3s;"></div>
+            </div>
+            
+            <!-- Cohesive gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-dark/70 via-transparent to-dark/60"></div>
         </div>
         
-        <!-- Subtle Background Effects -->
+        <!-- Enhanced Tech Elements -->
         <div class="absolute inset-0 z-10">
-            <!-- Geometric patterns for tech feel -->
-            <div class="absolute top-10 right-10 w-32 h-32 border border-primary/20 rounded-lg rotate-45 animate-float opacity-30"></div>
-            <div class="absolute bottom-20 left-10 w-24 h-24 border border-accent/20 rounded-full animate-float opacity-20" style="animation-delay: 1s;"></div>
-            <div class="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/10 rounded-lg animate-float opacity-40" style="animation-delay: 2s;"></div>
-            <div class="absolute bottom-1/3 right-1/4 w-20 h-20 bg-accent/10 rounded-full animate-float opacity-30" style="animation-delay: 3s;"></div>
+            <!-- Large geometric shapes -->
+            <div class="absolute top-10 right-10 w-40 h-40 border-2 border-primary/25 rounded-2xl rotate-12 animate-float opacity-40"></div>
+            <div class="absolute bottom-20 left-10 w-32 h-32 border-2 border-accent/25 rounded-full animate-float opacity-30" style="animation-delay: 1s;"></div>
+            
+            <!-- Medium tech elements -->
+            <div class="absolute top-1/3 left-1/6 w-24 h-24 bg-gradient-to-br from-primary/15 to-transparent rounded-xl animate-float opacity-50" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-1/3 right-1/6 w-28 h-28 bg-gradient-to-br from-accent/15 to-transparent rounded-full animate-float opacity-40" style="animation-delay: 3s;"></div>
+            
+            <!-- Small accent dots -->
+            <div class="absolute top-1/4 right-1/3 w-4 h-4 bg-primary/60 rounded-full animate-pulse"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-4 h-4 bg-accent/60 rounded-full animate-pulse" style="animation-delay: 1.5s;"></div>
+            <div class="absolute top-2/3 right-1/2 w-4 h-4 bg-primary/60 rounded-full animate-pulse" style="animation-delay: 2.5s;"></div>
         </div>
 
         <div class="container mx-auto px-6 relative z-20">
