@@ -13,11 +13,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
+    - name: List available secrets (for debugging)
+      run: echo "Deployment starting..."
+        
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.HOSTINGER_HOST }}
-        username: ${{ secrets.HOSTINGER_USER }}
+        server: ${{ secrets.hostinger_host }}
+        username: u291229706.maestrodom
         password: ${{ secrets.HOSTINGER_PASSWORD }}
         port: 21
         server-dir: /public_html/
