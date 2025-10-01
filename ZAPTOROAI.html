@@ -509,6 +509,10 @@
                         Services
                         <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
                     </a>
+                    <a href="#multimedia-showcase" class="text-white hover:text-accent transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        🎬 Media
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></div>
+                    </a>
                     <a href="#ai-process" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
                         How It Works
                         <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
@@ -559,10 +563,12 @@
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
         <!-- Animated Background Video -->
         <div class="absolute inset-0 z-0">
-            <video autoplay muted loop class="w-full h-full object-cover opacity-20">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-30" poster="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=crop">
                 <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                <!-- Fallback background image if video fails -->
+                Your browser does not support the video tag.
             </video>
-            <div class="absolute inset-0 video-overlay"></div>
+            <div class="absolute inset-0 video-overlay bg-dark/40"></div>
         </div>
         
         <!-- Background Effects -->
@@ -772,6 +778,87 @@
     </section>
 
     <!-- Speed Advantage Section -->
+    <!-- Multimedia Technology Showcase -->
+    <section id="multimedia-showcase" class="py-20 bg-gradient-to-br from-dark via-primary/5 to-dark relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-white">
+                    🎬 <span class="gradient-text">Multimedia Experience</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Explore our technology through interactive visuals, videos, and live demonstrations
+                </p>
+                
+                <!-- Main Hero Video Showcase -->
+                <div class="max-w-4xl mx-auto mb-12">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/50">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop" 
+                            alt="ZapToro AI Dashboard Preview"
+                            class="w-full h-80 object-cover"
+                            loading="eager"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="w-24 h-24 bg-primary/90 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse shadow-xl">
+                                    <i class="fas fa-play text-4xl text-white ml-1"></i>
+                                </div>
+                                <p class="text-white text-2xl font-bold mb-2">▶️ Watch ZapToro AI in Action</p>
+                                <p class="text-gray-200 text-lg">Interactive Demo • 2 min overview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image Gallery Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-primary/30">
+                        <img 
+                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" 
+                            alt="AI Neural Networks"
+                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                            loading="eager"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <h4 class="text-white font-bold">🧠 AI Neural Networks</h4>
+                            <p class="text-gray-200 text-sm">Advanced machine learning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-accent/30">
+                        <img 
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
+                            alt="Analytics Dashboard"
+                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                            loading="eager"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <h4 class="text-white font-bold">📊 Live Analytics</h4>
+                            <p class="text-gray-200 text-sm">Real-time insights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-primary/30">
+                        <img 
+                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop" 
+                            alt="Automation Technology"
+                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                            loading="eager"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <h4 class="text-white font-bold">⚡ Smart Automation</h4>
+                            <p class="text-gray-200 text-sm">Intelligent workflows</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="speed-advantage" class="py-20 bg-darkgray/30 relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16 animate-fade-in-up">
@@ -788,12 +875,13 @@
                 
                 <!-- AI Technology Showcase Images -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-xl">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-primary/20">
                         <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop" 
                              alt="AI Neural Network Visualization" 
-                             class="w-full h-32 object-cover transform hover:scale-110 transition-transform duration-300" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent"></div>
-                        <div class="absolute bottom-2 left-2 text-white text-xs font-medium">Neural Networks</div>
+                             class="w-full h-32 object-cover transform hover:scale-110 transition-transform duration-300" 
+                             loading="eager" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-2 left-2 text-white text-xs font-bold bg-primary/20 px-2 py-1 rounded">Neural Networks</div>
                     </div>
                     
                     <div class="relative overflow-hidden rounded-xl">
@@ -1133,22 +1221,25 @@
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/20 to-accent/20 animate-gradient-x"></div>
             
             <!-- Background Success Images -->
-            <div class="absolute top-10 right-10 opacity-10">
+            <div class="absolute top-10 right-10 opacity-30">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" 
                      alt="Business Success" 
-                     class="w-24 h-24 rounded-full object-cover animate-float" />
+                     class="w-24 h-24 rounded-full object-cover animate-float" 
+                     loading="eager" />
             </div>
-            <div class="absolute bottom-20 left-10 opacity-10">
+            <div class="absolute bottom-20 left-10 opacity-30">
                 <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=150&fit=crop" 
                      alt="Team Success" 
                      class="w-32 h-32 rounded-full object-cover animate-float" 
-                     style="animation-delay: 0.7s" />
+                     style="animation-delay: 0.7s" 
+                     loading="eager" />
             </div>
-            <div class="absolute top-1/2 left-1/4 opacity-10">
+            <div class="absolute top-1/2 left-1/4 opacity-30">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=120&fit=crop" 
                      alt="Analytics Dashboard" 
                      class="w-20 h-20 rounded-lg object-cover animate-float" 
-                     style="animation-delay: 1.2s" />
+                     style="animation-delay: 1.2s" 
+                     loading="eager" />
             </div>
         </div>
         
@@ -1362,14 +1453,15 @@
                 
                 <!-- Technology Demo Video -->
                 <div class="max-w-4xl mx-auto mb-12 animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                        <div class="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center relative">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/30">
+                        <div class="aspect-video bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center relative" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=450&fit=crop'); background-size: cover; background-position: center;">
+                            <div class="absolute inset-0 bg-dark/60"></div>
                             <div class="text-center z-10">
-                                <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse">
+                                <div class="w-20 h-20 bg-primary/80 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse shadow-lg">
                                     <i class="fas fa-play text-3xl text-white"></i>
                                 </div>
-                                <p class="text-white text-lg font-medium">See ZapToro AI Automation in Action</p>
-                                <p class="text-gray-300 text-sm mt-2">Watch how our 5-step process transforms your lead generation</p>
+                                <p class="text-white text-xl font-bold mb-2">See ZapToro AI Automation in Action</p>
+                                <p class="text-gray-200 text-sm">Watch how our 5-step process transforms your lead generation</p>
                             </div>
                             <!-- Background tech pattern -->
                             <div class="absolute inset-0 opacity-20">
@@ -1379,6 +1471,34 @@
                                 <div class="absolute bottom-4 right-4 w-14 h-14 border border-accent/20 rounded-full animate-float" style="animation-delay: 1.5s"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Multimedia Showcase Banner -->
+            <div class="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-2xl p-8 mb-12 max-w-6xl mx-auto border border-primary/20">
+                <h3 class="text-2xl text-center text-white font-bold mb-6">🎬 Interactive Technology Showcase</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-video text-primary text-2xl"></i>
+                        </div>
+                        <p class="text-white font-medium">Live Demo Videos</p>
+                        <p class="text-gray-300 text-sm">See AI in action</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-images text-accent text-2xl"></i>
+                        </div>
+                        <p class="text-white font-medium">Technology Gallery</p>
+                        <p class="text-gray-300 text-sm">Visual showcases</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-play-circle text-primary text-2xl"></i>
+                        </div>
+                        <p class="text-white font-medium">Interactive Elements</p>
+                        <p class="text-gray-300 text-sm">Engaging experiences</p>
                     </div>
                 </div>
             </div>
@@ -1695,14 +1815,15 @@
                 
                 <!-- Integration Preview Images -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-2xl">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/30">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
                              alt="CRM Integration Dashboard" 
-                             class="w-full h-64 object-cover" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                             class="w-full h-64 object-cover" 
+                             loading="eager" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-dark/20"></div>
                         <div class="absolute bottom-4 left-4 text-white">
-                            <h4 class="text-lg font-bold mb-1">CRM Integration</h4>
-                            <p class="text-sm text-gray-300">Seamless data sync with your existing tools</p>
+                            <h4 class="text-lg font-bold mb-1 text-primary">CRM Integration</h4>
+                            <p class="text-sm text-gray-200">Seamless data sync with your existing tools</p>
                         </div>
                     </div>
                     
