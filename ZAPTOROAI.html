@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapToro AI - Revolutionary Lead Generation Agency | AI-Powered Growth</title>
+    <meta name="description" content="ZapToro AI transforms businesses with cutting-edge AI lead generation. Get 10x more qualified leads with our revolutionary AI technology. Book your free consultation today.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth transforms for our scroll-scale/parallax utilities */
+        .scale-on-scroll, .parallax-video {
+            transition: transform 420ms cubic-bezier(.2,.9,.2,1);
+            will-change: transform;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon / logo - place your logo at assets/logo.png -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ff6b35",
+                        secondary: "#1a1a1a",
+                        accent: "#00d4ff",
+                        success: "#00ff88",
+                        warning: "#ffb800",
+                        danger: "#ff3838",
+                        dark: "#0a0a0a",
+                        darkgray: "#1f1f1f",
+                        lightgray: "#2a2a2a"
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'rajdhani': ['Rajdhani', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s infinite',
+                        'bounce-gentle': 'bounce 2s infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in-down': 'fadeInDown 0.8s ease-out',
+                        'fade-in-left': 'fadeInLeft 0.8s ease-out',
+                        'fade-in-right': 'fadeInRight 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-down': 'slideDown 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.4s ease-out',
+                        'scale-in-bounce': 'scaleInBounce 0.6s ease-out',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'glow-pulse': 'glowPulse 3s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'floatSlow 8s ease-in-out infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'gradient': 'gradient 3s ease infinite',
+                        'gradient-x': 'gradientX 4s ease infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'shake': 'shake 0.5s ease-in-out',
+                        'zoom-in': 'zoomIn 0.5s ease-out',
+                        'zoom-out': 'zoomOut 0.5s ease-out',
+                        'flip': 'flip 0.6s ease-in-out',
+                        'rotate-y': 'rotateY 1s ease-in-out',
+                        'slide-in-blurred': 'slideInBlurred 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000)',
+                        'text-focus': 'textFocus 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530)',
+                        'tracking-in': 'trackingIn 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                        'kenburns-top': 'kenburnsTop 5s ease-out infinite',
+                        'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
+                        'typewriter': 'typewriter 4s steps(40) 1s 1 normal both',
+                        'blink': 'blink 1s infinite',
+                        'neon-glow': 'neonGlow 2s ease-in-out infinite alternate',
+                        'circuit-pulse': 'circuitPulse 3s ease-in-out infinite',
+                        'hologram': 'hologram 4s ease-in-out infinite',
+                        'energy-flow': 'energyFlow 2s linear infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(60px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-60px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-60px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        fadeInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(60px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100%)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100%)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        scaleInBounce: {
+                            '0%': { transform: 'scale(0.3)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 20px rgba(255, 107, 53, 0.3)' },
+                            '100%': { boxShadow: '0 0 40px rgba(255, 107, 53, 0.6)' }
+                        },
+                        glowPulse: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(255, 107, 53, 0.3)' },
+                            '50%': { boxShadow: '0 0 60px rgba(255, 107, 53, 0.8), 0 0 100px rgba(0, 212, 255, 0.4)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        floatSlow: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '33%': { transform: 'translateY(-30px) rotate(2deg)' },
+                            '66%': { transform: 'translateY(-10px) rotate(-1deg)' }
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        },
+                        gradientX: {
+                            '0%, 100%': { backgroundPosition: '0% 0%' },
+                            '50%': { backgroundPosition: '100% 0%' }
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' }
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-10px)' },
+                            '20%, 40%, 60%, 80%': { transform: 'translateX(10px)' }
+                        },
+                        zoomIn: {
+                            '0%': { transform: 'scale(0)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        zoomOut: {
+                            '0%': { transform: 'scale(1)', opacity: '1' },
+                            '100%': { transform: 'scale(0)', opacity: '0' }
+                        },
+                        flip: {
+                            '0%': { transform: 'rotateY(0)' },
+                            '100%': { transform: 'rotateY(180deg)' }
+                        },
+                        rotateY: {
+                            '0%': { transform: 'rotateY(0deg)' },
+                            '100%': { transform: 'rotateY(360deg)' }
+                        },
+                        slideInBlurred: {
+                            '0%': { transform: 'translateX(-1000px) scaleX(2.5) scaleY(0.2)', filter: 'blur(40px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0) scaleY(1) scaleX(1)', filter: 'blur(0)', opacity: '1' }
+                        },
+                        textFocus: {
+                            '0%': { filter: 'blur(12px)', opacity: '0' },
+                            '100%': { filter: 'blur(0px)', opacity: '1' }
+                        },
+                        trackingIn: {
+                            '0%': { letterSpacing: '-0.5em', opacity: '0' },
+                            '40%': { opacity: '0.6' },
+                            '100%': { opacity: '1' }
+                        },
+                        kenburnsTop: {
+                            '0%': { transform: 'scale(1) translateY(0px)', transformOrigin: '50% 16%' },
+                            '100%': { transform: 'scale(1.25) translateY(-15px)', transformOrigin: 'top' }
+                        },
+                        heartbeat: {
+                            '0%': { transform: 'scale(1)' },
+                            '14%': { transform: 'scale(1.3)' },
+                            '28%': { transform: 'scale(1)' },
+                            '42%': { transform: 'scale(1.3)' },
+                            '70%': { transform: 'scale(1)' }
+                        },
+                        typewriter: {
+                            'from': { width: '0' },
+                            'to': { width: '100%' }
+                        },
+                        blink: {
+                            '0%, 50%': { borderColor: 'transparent' },
+                            '51%, 100%': { borderColor: '#ff6b35' }
+                        },
+                        neonGlow: {
+                            '0%': { 
+                                textShadow: '0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff, 0 0 20px #00d4ff',
+                                filter: 'brightness(1)'
+                            },
+                            '100%': { 
+                                textShadow: '0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff',
+                                filter: 'brightness(1.2)'
+                            }
+                        },
+                        circuitPulse: {
+                            '0%, 100%': { 
+                                boxShadow: '0 0 20px rgba(0, 212, 255, 0.3), inset 0 0 20px rgba(0, 212, 255, 0.1)',
+                                borderColor: 'rgba(0, 212, 255, 0.3)'
+                            },
+                            '50%': { 
+                                boxShadow: '0 0 40px rgba(0, 212, 255, 0.8), inset 0 0 30px rgba(0, 212, 255, 0.3)',
+                                borderColor: 'rgba(0, 212, 255, 0.8)'
+                            }
+                        },
+                        hologram: {
+                            '0%, 100%': { 
+                                opacity: '1',
+                                transform: 'translateY(0px)',
+                                filter: 'hue-rotate(0deg)'
+                            },
+                            '25%': { 
+                                opacity: '0.8',
+                                transform: 'translateY(-2px)',
+                                filter: 'hue-rotate(90deg)'
+                            },
+                            '50%': { 
+                                opacity: '0.9',
+                                transform: 'translateY(-1px)',
+                                filter: 'hue-rotate(180deg)'
+                            },
+                            '75%': { 
+                                opacity: '0.7',
+                                transform: 'translateY(-3px)',
+                                filter: 'hue-rotate(270deg)'
+                            }
+                        },
+                        energyFlow: {
+                            '0%': { 
+                                background: 'linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), transparent)',
+                                transform: 'translateX(-100%)'
+                            },
+                            '100%': { 
+                                background: 'linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), transparent)',
+                                transform: 'translateX(100%)'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #ff6b35;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typewriter 4s steps(40) 1s 1 normal both, blink 1s infinite;
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b35, #00d4ff, #00ff88);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .video-overlay {
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.8), rgba(0, 212, 255, 0.6));
+        }
+        
+        @keyframes particle-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(-60px) rotate(240deg); }
+        }
+
+        /* King Kong style headline font */
+        .headline-font {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            line-height: 0.9;
+        }
+
+        /* Rajdhani for body text - made bolder and more readable */
+        .body-font {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .body-font-medium {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+
+        .body-font-semibold {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .body-font-bold {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.005em;
+        }
+
+        /* Highlighted text styles */
+        .highlight-primary {
+            color: #ff6b35;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+        }
+
+        .highlight-accent {
+            color: #00d4ff;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+
+        .highlight-success {
+            color: #00ff88;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        }
+
+        .highlight-warning {
+            color: #ffb800;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 184, 0, 0.3);
+        }
+
+        /* Hi-tech logo styles */
+        .logo-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-glow {
+            background: linear-gradient(45deg, #ff6b35, #00d4ff, #00ff88, #ff6b35);
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+        }
+
+        .circuit-pattern {
+            position: absolute;
+            inset: 0;
+            background: 
+                linear-gradient(90deg, transparent 48%, rgba(0, 212, 255, 0.3) 49%, rgba(0, 212, 255, 0.3) 51%, transparent 52%),
+                linear-gradient(0deg, transparent 48%, rgba(0, 212, 255, 0.3) 49%, rgba(0, 212, 255, 0.3) 51%, transparent 52%);
+            animation: circuit-pulse 2s ease-in-out infinite;
+        }
+
+        .hologram-effect {
+            position: relative;
+            background: linear-gradient(45deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1));
+            backdrop-filter: blur(1px);
+            animation: hologram 4s ease-in-out infinite;
+        }
+
+        .energy-beam {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), transparent);
+            animation: energy-flow 2s linear infinite;
+        }
+
+        .neon-text {
+            color: #00d4ff;
+            text-shadow: 
+                0 0 5px #00d4ff,
+                0 0 10px #00d4ff,
+                0 0 15px #00d4ff,
+                0 0 20px #00d4ff;
+            animation: neon-glow 2s ease-in-out infinite alternate;
+        }
+
+        .tech-border {
+            border: 2px solid transparent;
+            background: linear-gradient(45deg, #ff6b35, #00d4ff) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: exclude;
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-rajdhani overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles" class="fixed inset-0 z-0 pointer-events-none"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-xl border-b border-lightgray/20 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Hi-Tech Logo -->
+                <div class="flex items-center space-x-4 animate-fade-in-left">
+                    <div class="logo-container relative">
+                        <!-- Main Logo Container -->
+                        <div class="relative w-12 h-12 logo-glow rounded-xl flex items-center justify-center overflow-hidden tech-border">
+                            <!-- Circuit Pattern Overlay -->
+                            <div class="circuit-pattern"></div>
+                            
+                            <!-- Hologram Effect -->
+                            <div class="hologram-effect absolute inset-0 rounded-xl"></div>
+                            
+                            <!-- Energy Beam -->
+                            <div class="energy-beam"></div>
+                            
+                            <!-- Main Icon -->
+                            <div class="relative z-10 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="animate-hologram">
+                                    <!-- Lightning Bolt with Circuit Elements -->
+                                    <path d="M13 2L3 14h6l-2 8 10-12h-6l2-8z" fill="url(#lightning-gradient)" stroke="url(#circuit-gradient)" stroke-width="0.5"/>
+                                    <!-- Circuit Nodes -->
+                                    <circle cx="8" cy="6" r="1" fill="#00d4ff" opacity="0.8" class="animate-pulse"/>
+                                    <circle cx="16" cy="10" r="1" fill="#00ff88" opacity="0.8" class="animate-pulse" style="animation-delay: 0.5s"/>
+                                    <circle cx="12" cy="18" r="1" fill="#ff6b35" opacity="0.8" class="animate-pulse" style="animation-delay: 1s"/>
+                                    
+                                    <!-- Gradient Definitions -->
+                                    <defs>
+                                        <linearGradient id="lightning-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                                        </linearGradient>
+                                        <linearGradient id="circuit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.8" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            
+                            <!-- Corner Accents -->
+                            <div class="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-accent animate-pulse"></div>
+                            <div class="absolute top-0 right-0 w-2 h-2 border-r-2 border-t-2 border-primary animate-pulse" style="animation-delay: 0.5s"></div>
+                            <div class="absolute bottom-0 left-0 w-2 h-2 border-l-2 border-b-2 border-success animate-pulse" style="animation-delay: 1s"></div>
+                            <div class="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-warning animate-pulse" style="animation-delay: 1.5s"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Logo (image if available, text fallback) -->
+                    <div class="relative flex items-center space-x-3">
+                        <img src="assets/logo.png" alt="ZapToro logo" class="w-10 h-10 rounded-md object-cover" onerror="this.style.display='none'" />
+                        <div>
+                            <h1 class="text-2xl font-black text-white headline-font relative">ZapToro
+                                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/30 to-transparent animate-energy-flow"></div>
+                            </h1>
+                            <div class="flex items-center space-x-1">
+                                <span class="text-xs neon-text body-font-bold tracking-wider">AI</span>
+                                <div class="w-1 h-1 bg-accent rounded-full animate-pulse"></div>
+                                <div class="w-1 h-1 bg-primary rounded-full animate-pulse" style="animation-delay: 0.3s"></div>
+                                <div class="w-1 h-1 bg-success rounded-full animate-pulse" style="animation-delay: 0.6s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 animate-fade-in-down">
+                    <a href="#home" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        Home
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    </a>
+                    <a href="#services" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        Services
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    </a>
+                    <a href="#results" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        Results
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    </a>
+                    <a href="#about" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        About
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    </a>
+                    <a href="#contact" class="text-white hover:text-primary transition-all duration-300 body-font-medium hover:scale-110 transform relative group">
+                        Contact
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="flex items-center space-x-4 animate-fade-in-right">
+                    <button class="hidden md:block bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-lg body-font-bold transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat relative overflow-hidden">
+                        <span class="relative z-10">Get Free Audit</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="lg:hidden text-white p-2 hover:animate-spin-slow relative">
+                        <i class="fas fa-bars text-xl"></i>
+                        <div class="absolute inset-0 border border-accent/30 rounded animate-circuit-pulse"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden bg-darkgray/95 backdrop-blur-xl border-t border-lightgray/20 animate-slide-down">
+            <div class="container mx-auto px-6 py-6 space-y-4">
+                <a href="#home" class="block text-white hover:text-primary transition-colors body-font-medium py-2 hover:animate-fade-in-right">Home</a>
+                <a href="#services" class="block text-white hover:text-primary transition-colors body-font-medium py-2 hover:animate-fade-in-right">Services</a>
+                <a href="#results" class="block text-white hover:text-primary transition-colors body-font-medium py-2 hover:animate-fade-in-right">Results</a>
+                <a href="#about" class="block text-white hover:text-primary transition-colors body-font-medium py-2 hover:animate-fade-in-right">About</a>
+                <a href="#contact" class="block text-white hover:text-primary transition-colors body-font-medium py-2 hover:animate-fade-in-right">Contact</a>
+                <button class="w-full bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-lg body-font-bold transition-all duration-300 mt-4 animate-scale-in-bounce relative overflow-hidden">
+                    <span class="relative z-10">Get Free Audit</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
+        <!-- Animated Background Video -->
+        <div class="absolute inset-0 z-0">
+            <video autoplay muted loop class="w-full h-full object-cover opacity-20">
+                <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 video-overlay"></div>
+        </div>
+        
+        <!-- Background Effects -->
+        <div class="absolute inset-0 z-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-dark to-accent/10"></div>
+            <div class="absolute top-20 left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float-slow"></div>
+            <div class="absolute bottom-20 right-20 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float-slow" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-success/20 rounded-full blur-3xl animate-float-slow" style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="animate-fade-in-up">
+                    <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                        <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
+                        <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
+                        ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.5s;">
+                        ZapToro AI <span class="highlight-primary">revolutionizes</span> lead generation with <span class="highlight-accent">cutting-edge</span> artificial intelligence. 
+                        Stop wasting money on <span class="highlight-warning">unqualified leads</span> and start <span class="highlight-success">converting</span> like never before.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
+                        <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat hover-lift relative overflow-hidden">
+                            <span class="relative z-10">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                Book Free Strategy Call
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
+                        </button>
+                        <button class="border-2 border-accent text-accent hover:bg-accent hover:text-dark px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 hover:animate-wiggle hover-lift relative overflow-hidden">
+                            <span class="relative z-10">
+                                <i class="fas fa-play mr-2"></i>
+                                Watch Demo
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-energy-flow"></div>
+                        </button>
+                    </div>
+                    
+                    <!-- Animated Stats -->
+                    <div class="grid grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.9s;">
+                        <div class="text-center hover-lift">
+                            <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce counter" data-target="500">0%</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">ROI</span> Increase</div>
+                        </div>
+                        <div class="text-center hover-lift">
+                            <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="10" style="animation-delay: 0.2s;">0x</div>
+                            <div class="text-sm text-gray-400 body-font">More <span class="highlight-accent">Leads</span></div>
+                        </div>
+                        <div class="text-center hover-lift">
+                            <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce" style="animation-delay: 0.4s;">24/7</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">AI</span> Working</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Media -->
+                <div class="relative animate-fade-in-right" style="animation-delay: 0.3s;">
+                    <div class="relative">
+                        <!-- Main Hero Image with Ken Burns Effect -->
+                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <img 
+                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&crop=center" 
+                                alt="AI-powered business analytics dashboard showing real-time lead generation metrics and conversion data" 
+                                class="w-full animate-kenburns-top"
+                                loading="lazy"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent rounded-2xl"></div>
+                        </div>
+                        
+                        <!-- Floating Interactive Cards -->
+                        <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
+                                    <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
+                                    <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift" style="animation-delay: 1s;">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center animate-pulse">
+                                    <i class="fas fa-users text-primary text-sm animate-wiggle"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white body-font-bold text-sm counter" data-target="1247">0</div>
+                                    <div class="text-gray-400 text-xs body-font">New <span class="highlight-primary">Leads</span> Today</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Floating Elements -->
+                        <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
+                        <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm" style="animation-delay: 2s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section (Audit Booking Form) -->
+    <section id="contact" class="py-20 bg-darkgray/60 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 lg:p-12">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-3xl headline-font mb-4">Book your Free AI Audit</h3>
+                        <p class="text-gray-300 mb-6 body-font">Schedule a free strategy call and audit. We'll analyze your funnel and show quick wins.</p>
+                        <ul class="text-gray-300 space-y-3">
+                            <li><i class="fas fa-check text-success mr-2"></i> 30-minute strategy call</li>
+                            <li><i class="fas fa-check text-success mr-2"></i> Free funnel & lead quality audit</li>
+                            <li><i class="fas fa-check text-success mr-2"></i> Actionable recommendations</li>
+                        </ul>
+                    </div>
+
+                    <form id="auditForm" class="space-y-4 bg-darkgray/40 p-4 rounded-lg" novalidate>
+                        <div>
+                            <label class="text-sm text-gray-300">Full name</label>
+                            <input id="name" name="name" type="text" required class="w-full mt-1 px-4 py-3 rounded-lg bg-dark border border-lightgray/30 focus:outline-none" placeholder="Jane Doe">
+                        </div>
+                        <div>
+                            <label class="text-sm text-gray-300">Business email</label>
+                            <input id="email" name="email" type="email" required class="w-full mt-1 px-4 py-3 rounded-lg bg-dark border border-lightgray/30 focus:outline-none" placeholder="name@company.com">
+                        </div>
+                        <div>
+                            <label class="text-sm text-gray-300">Website (optional)</label>
+                            <input id="website" name="website" type="url" class="w-full mt-1 px-4 py-3 rounded-lg bg-dark border border-lightgray/30 focus:outline-none" placeholder="https://your-site.com">
+                        </div>
+                        <div>
+                            <label class="text-sm text-gray-300">Quick summary</label>
+                            <textarea id="message" name="message" rows="3" class="w-full mt-1 px-4 py-3 rounded-lg bg-dark border border-lightgray/30 focus:outline-none" placeholder="Describe your current lead flow or main challenge"></textarea>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <button id="submitBtn" type="submit" class="bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-lg body-font-bold transition-all duration-300">Book Audit</button>
+                            <div id="formStatus" class="text-sm text-gray-300"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating AI Assistant Widget -->
+    <div id="aiWidget" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-primary shadow-2xl z-60 flex items-center justify-center cursor-pointer" title="AI Assistant">
+        <i id="aiIcon" class="fas fa-robot text-white text-xl"></i>
+    </div>
+
+    <script>
+        // Simple client-side booking form handler
+        (function(){
+            const form = document.getElementById('auditForm');
+            const status = document.getElementById('formStatus');
+            const submitBtn = document.getElementById('submitBtn');
+
+            function showStatus(msg, ok){
+                status.textContent = msg;
+                status.style.color = ok ? '#00ff88' : '#ff6b35';
+            }
+
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const website = document.getElementById('website').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if(!name || !email){
+                    showStatus('Please provide name and email.', false);
+                    return;
+                }
+
+                // Basic email pattern check
+                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailRe.test(email)){
+                    showStatus('Please provide a valid email address.', false);
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+
+                // POST to backend endpoint that accepts audit bookings.
+                fetch('/api/book-audit', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({name, email, website, message})
+                }).then(async res => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Book Audit';
+                    if(!res.ok){
+                        const txt = await res.text().catch(()=>null);
+                        showStatus('Server error: ' + (txt || res.statusText), false);
+                        return;
+                    }
+                    const json = await res.json().catch(()=>null);
+                    form.reset();
+                    if(json && json.ok){
+                        const msg = json.emailed ? 'Thanks — we received your request and emailed a scheduling link.' : 'Thanks — we received your request. We will email you to schedule.';
+                        showStatus(msg, true);
+                    } else {
+                        showStatus('Thanks — your request was received.', true);
+                    }
+                }).catch(err => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Book Audit';
+                    console.error('Booking error', err);
+                    showStatus('Network error — could not send request. Try again later.', false);
+                });
+            });
+        })();
+
+        // AI Assistant widget - lightweight local implementation
+        (function(){
+            const aiWidget = document.getElementById('aiWidget');
+            const aiPanel = document.getElementById('aiPanel');
+            const closeAi = document.getElementById('closeAi');
+            const aiForm = document.getElementById('aiForm');
+            const aiInput = document.getElementById('aiInput');
+            const aiMessages = document.getElementById('aiMessages');
+
+            const canned = [
+                {k: /book|audit|strategy/i, a: "I can help you book a free 30-minute AI audit. Would you like to provide your name and email?"},
+                {k: /price|pricing|cost/i, a: "Our pricing depends on volume and scope — typical engagements start at $3k/mo. For an exact quote, book an audit and we'll prepare a custom proposal."},
+                {k: /lead|leads/i, a: "We focus on AI lead scoring, chatbots, and smart targeting. Tell me your industry and current traffic and I can give quick tips."},
+                {k: /hello|hi|hey/i, a: "Hey! I'm ZapToro Assistant — ask me about audits, pricing, or say 'book a call'."}
+            ];
+
+            function pushMessage(text, from='bot'){
+                const wrap = document.createElement('div');
+                wrap.className = from === 'bot' ? 'text-gray-200 bg-darkgray/60 p-3 rounded-lg' : 'text-dark bg-accent/20 p-3 rounded-lg self-end text-gray-100';
+                wrap.textContent = text;
+                aiMessages.appendChild(wrap);
+                aiMessages.scrollTop = aiMessages.scrollHeight;
+            }
+
+            aiWidget.addEventListener('click', function(){
+                aiPanel.classList.toggle('hidden');
+                if(!aiPanel.classList.contains('hidden')){
+                    pushMessage('Hi — I can answer quick questions or help book your audit. Try: "book a call"');
+                }
+            });
+
+            closeAi.addEventListener('click', function(){
+                aiPanel.classList.add('hidden');
+            });
+
+            aiForm.addEventListener('submit', function(e){
+                e.preventDefault();
+                const text = aiInput.value.trim();
+                if(!text) return;
+                // show user message
+                const userWrap = document.createElement('div');
+                userWrap.className = 'text-gray-900 bg-accent p-2 rounded-lg self-end text-sm';
+                userWrap.textContent = text;
+                aiMessages.appendChild(userWrap);
+                aiInput.value = '';
+                aiMessages.scrollTop = aiMessages.scrollHeight;
+
+                // Check canned patterns
+                let handled = false;
+                for(const c of canned){
+                    if(c.k.test(text)){
+                        setTimeout(()=> pushMessage(c.a, 'bot'), 400);
+                        handled = true;
+                        break;
+                    }
+                }
+
+                if(!handled){
+                    // If you have an AI endpoint you can forward it here. Configure by
+                    // setting window.AI_ENDPOINT to your API URL. The client will POST
+                    // {message: text} and expects {reply: '...'} back.
+                    if(window.AI_ENDPOINT){
+                        pushMessage('Thinking...', 'bot');
+                        fetch(window.AI_ENDPOINT, {
+                            method: 'POST',
+                            headers: {'Content-Type': 'application/json'},
+                            body: JSON.stringify({message: text})
+                        }).then(r=>r.json()).then(json=>{
+                            // remove 'Thinking...' placeholder and append reply
+                            // (naive approach: clear then show reply)
+                            aiMessages.lastChild && aiMessages.removeChild(aiMessages.lastChild);
+                            pushMessage(json.reply || 'Sorry, I had no reply.', 'bot');
+                        }).catch(err=>{
+                            aiMessages.lastChild && aiMessages.removeChild(aiMessages.lastChild);
+                            pushMessage('Sorry — the AI service failed. Try again or book an audit.', 'bot');
+                        });
+                    } else {
+                        // fallback generic reply
+                        setTimeout(()=> pushMessage("Thanks — we've captured that. If you'd like to book an audit say 'book a call' or fill the booking form.", 'bot'), 500);
+                    }
+                }
+            });
+        })();
+    </script>
+
+    <!-- AI Chat Panel (hidden by default) -->
+    <div id="aiPanel" class="fixed bottom-24 right-6 w-96 max-w-full bg-darkgray/95 border border-lightgray/20 rounded-xl shadow-2xl z-70 hidden flex-col overflow-hidden">
+        <div class="px-4 py-3 border-b border-lightgray/20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                    <i class="fas fa-robot text-accent"></i>
+                </div>
+                <div>
+                    <div class="text-white body-font-bold">ZapToro Assistant</div>
+                    <div class="text-xs text-gray-400">AI helper — quick answers & booking assistance</div>
+                </div>
+            </div>
+            <button id="closeAi" class="text-gray-300 hover:text-white"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="aiMessages" class="p-4 h-64 overflow-y-auto space-y-3 body-font text-sm"></div>
+        <form id="aiForm" class="p-4 border-t border-lightgray/20 flex items-center gap-3">
+            <input id="aiInput" class="flex-1 bg-dark px-3 py-2 rounded-lg border border-lightgray/20 focus:outline-none text-gray-200" placeholder="Ask me about audits, pricing, or say 'book a call'" />
+            <button class="bg-accent text-dark px-4 py-2 rounded-lg" type="submit">Send</button>
+        </form>
+    </div>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-darkgray/50 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/20 to-accent/20 animate-gradient-x"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                    <i class="fas fa-cogs text-accent mr-2 animate-spin-slow"></i>
+                    <span class="text-accent body-font-semibold text-sm">Our <span class="highlight-primary">AI Services</span></span>
+                </div>
+                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
+                    AI that finds your best customers — and helps you close them faster
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
+                    We combine modern machine learning with sales-first marketing to turn anonymous traffic into qualified conversations. Your funnel becomes a revenue engine—smarter, faster, and measurable.
+                </p>
+
+                <!-- Short narrative inspired by the approachable storytelling style of modern product sites -->
+                <div class="mt-8 max-w-2xl mx-auto text-gray-300 body-font text-base animate-fade-in-up">
+                    <p class="mb-4">There was a time when more clicks felt like more customers. Then we learned to listen: to which leads engage, which stall, and which convert. We built tools that read behavior at scale and handed that signal back to your marketing so you spend on the right people — not the loudest ones.</p>
+                    <p>Think of this as the playbook you would have written if every lead told you what they wanted first. We automate the listening, scoring, and follow-up so your team closes the conversations that matter.</p>
+                </div>
+
+                <!-- Animated network / nodes visual (subtle) -->
+                <div class="mt-8 flex justify-center">
+                    <svg id="networkViz" width="360" height="120" viewBox="0 0 360 120" class="mx-auto" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="g" x1="0" x2="1">
+                                <stop offset="0%" stop-color="#00d4ff" />
+                                <stop offset="100%" stop-color="#ff6b35" />
+                            </linearGradient>
+                        </defs>
+                        <!-- nodes -->
+                        <circle cx="40" cy="60" r="6" fill="url(#g)" class="node" />
+                        <circle cx="120" cy="30" r="5" fill="#fff" class="node" />
+                        <circle cx="200" cy="70" r="7" fill="#00ff88" class="node" />
+                        <circle cx="280" cy="38" r="5" fill="#fff" class="node" />
+                        <circle cx="320" cy="80" r="4" fill="#ffb800" class="node" />
+
+                        <!-- links -->
+                        <line x1="46" y1="60" x2="116" y2="34" stroke="rgba(255,255,255,0.12)" stroke-width="1.8" class="link" />
+                        <line x1="126" y1="36" x2="196" y2="68" stroke="rgba(255,255,255,0.12)" stroke-width="1.8" class="link" />
+                        <line x1="206" y1="72" x2="276" y2="40" stroke="rgba(255,255,255,0.12)" stroke-width="1.8" class="link" />
+                        <line x1="286" y1="42" x2="316" y2="78" stroke="rgba(255,255,255,0.12)" stroke-width="1.8" class="link" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-primary/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-brain text-primary text-2xl group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-primary transition-colors">AI Lead Scoring</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        Our AI analyzes <span class="highlight-primary">200+ data points</span> to score and prioritize your <span class="highlight-accent">hottest prospects</span> in real-time.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-success">Predictive</span> lead scoring</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">Behavioral</span> analysis</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-warning">Real-time</span> updates</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-accent/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-robot text-accent text-2xl group-hover:animate-wiggle"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-accent transition-colors">AI Chatbots</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        <span class="highlight-warning">24/7</span> intelligent chatbots that <span class="highlight-primary">qualify leads</span>, book appointments, and <span class="highlight-success">never miss</span> an opportunity.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">Natural</span> conversations</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i>Lead <span class="highlight-primary">qualification</span></li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-success">Appointment</span> booking</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-success/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-success/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-target text-success text-2xl group-hover:animate-heartbeat"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-success transition-colors">Smart Targeting</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        <span class="highlight-accent">AI-powered</span> audience targeting that finds your <span class="highlight-primary">ideal customers</span> across all <span class="highlight-success">digital channels</span>.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-primary">Lookalike</span> audiences</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">Cross-platform</span> targeting</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-warning">Dynamic</span> optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-warning/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 0.7s;">
+                    <div class="w-16 h-16 bg-warning/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-chart-line text-warning text-2xl group-hover:animate-bounce-gentle"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-warning transition-colors">Predictive Analytics</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        <span class="highlight-success">Forecast</span> customer behavior and <span class="highlight-primary">optimize campaigns</span> before your competitors even <span class="highlight-accent">react</span>.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-success">Revenue</span> forecasting</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-warning">Churn</span> prediction</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">Lifetime value</span> analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-primary/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 0.9s;">
+                    <div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-envelope text-primary text-2xl group-hover:animate-wiggle"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-primary transition-colors">AI Email Sequences</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        <span class="highlight-accent">Personalized</span> email campaigns that adapt to each prospect's <span class="highlight-primary">behavior</span> and <span class="highlight-success">preferences</span>.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-primary">Dynamic</span> personalization</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-warning">Optimal</span> send times</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">A/B testing</span> automation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 hover:border-accent/50 transition-all duration-500 transform hover:scale-105 animate-fade-in-up hover-lift group" style="animation-delay: 1.1s;">
+                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-rotate-y">
+                        <i class="fas fa-sync-alt text-accent text-2xl group-hover:animate-spin"></i>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-accent transition-colors">Marketing Automation</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        <span class="highlight-success">Complete</span> marketing automation that nurtures leads from <span class="highlight-primary">first touch</span> to <span class="highlight-accent">closed deal</span>.
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.5s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-accent">Multi-channel</span> workflows</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.7s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-primary">Trigger-based</span> actions</li>
+                        <li class="flex items-center animate-fade-in-left body-font" style="animation-delay: 0.9s;"><i class="fas fa-check text-success mr-2 animate-bounce"></i><span class="highlight-warning">ROI</span> optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick KPI bars -->
+            <div class="max-w-4xl mx-auto mt-12 bg-lightgray/10 p-6 rounded-xl border border-lightgray/20">
+                <div class="grid md:grid-cols-3 gap-6 items-center">
+                    <div class="text-center">
+                        <div class="text-3xl headline-font text-primary counter" data-target="92">0</div>
+                        <div class="text-sm text-gray-400">Lead Quality Index</div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-300 mb-2">Conversion Rate</div>
+                        <div class="w-full bg-dark h-3 rounded-full overflow-hidden progress-bar" data-percent="37">
+                            <div class="fill bg-primary h-full" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-300 mb-2">Time-to-Contact</div>
+                        <div class="w-full bg-dark h-3 rounded-full overflow-hidden progress-bar" data-percent="12">
+                            <div class="fill bg-accent h-full" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-20 relative overflow-hidden">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 parallax-bg opacity-20" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop&crop=center');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/70"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center bg-success/20 border border-success/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                    <i class="fas fa-trophy text-success mr-2 animate-bounce-gentle"></i>
+                    <span class="text-success body-font-semibold text-sm"><span class="highlight-warning">Proven</span> Results</span>
+                </div>
+                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
+                    Real Results from <span class="gradient-text">Real Clients</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
+                    See how ZapToro AI has <span class="highlight-primary">transformed</span> businesses across industries with <span class="highlight-success">measurable</span>, <span class="highlight-accent">game-changing</span> results.
+                </p>
+            </div>
+
+            <!-- Case Studies with Enhanced Media -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Case Study 1 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.1s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop&crop=center" 
+                            alt="E-commerce business dashboard showing 400% revenue increase through AI-powered lead generation" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
+                            +400%
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">E-commerce</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-primary transition-colors">400% Revenue Increase</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        Fashion retailer increased <span class="highlight-success">online sales</span> by <span class="highlight-primary">400%</span> in 6 months using our AI <span class="highlight-accent">lead scoring</span> and personalization.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success counter animate-scale-in-bounce" data-target="400">0%</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Revenue</span> Growth</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent counter animate-scale-in-bounce" data-target="65" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Conversion</span> Rate</div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.3s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=200&fit=crop&crop=center" 
+                            alt="SaaS company team celebrating 10x lead generation growth with AI technology" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-accent/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
+                            10x
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">SaaS</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-accent transition-colors">10x Lead Generation</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        B2B SaaS company generated <span class="highlight-accent">10x more</span> qualified leads with our AI <span class="highlight-primary">chatbot</span> and <span class="highlight-success">targeting system</span>.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success counter animate-scale-in-bounce" data-target="1000">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-success">Increase</span></div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent counter animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.5s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=200&fit=crop&crop=center" 
+                            alt="Healthcare provider using AI to reduce cost per lead by 70% while improving patient acquisition" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-success/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-success/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
+                            -70%
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-success/20 text-success px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">Healthcare</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-success transition-colors">70% Cost Reduction</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        Healthcare provider reduced <span class="highlight-warning">cost per lead</span> by <span class="highlight-success">70%</span> while <span class="highlight-primary">doubling</span> appointment bookings.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success animate-scale-in-bounce">-70%</div>
+                            <div class="text-sm text-gray-400 body-font">Cost Per <span class="highlight-warning">Lead</span></div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent counter animate-scale-in-bounce" data-target="200" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Appointments</span></div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Animated Stats Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center animate-fade-in-up hover-lift group" style="animation-delay: 0.1s;">
+                    <div class="text-5xl headline-font text-primary mb-4 counter group-hover:animate-heartbeat" data-target="500">0+</div>
+                    <div class="text-xl body-font-semibold text-white mb-2 group-hover:text-primary transition-colors"><span class="highlight-primary">Clients</span> Served</div>
+                    <div class="text-gray-400 body-font">Across <span class="highlight-accent">50+</span> industries</div>
+                </div>
+                <div class="text-center animate-fade-in-up hover-lift group" style="animation-delay: 0.3s;">
+                    <div class="text-5xl headline-font text-accent mb-4 group-hover:animate-heartbeat">$50M+</div>
+                    <div class="text-xl body-font-semibold text-white mb-2 group-hover:text-accent transition-colors"><span class="highlight-accent">Revenue</span> Generated</div>
+                    <div class="text-gray-400 body-font">For our <span class="highlight-success">clients</span></div>
+                </div>
+                <div class="text-center animate-fade-in-up hover-lift group" style="animation-delay: 0.5s;">
+                    <div class="text-5xl headline-font text-success mb-4 counter group-hover:animate-heartbeat" data-target="95">0%</div>
+                    <div class="text-xl body-font-semibold text-white mb-2 group-hover:text-success transition-colors">Client <span class="highlight-success">Retention</span></div>
+                    <div class="text-gray-400 body-font">Year over <span class="highlight-warning">year</span></div>
+                </div>
+                <div class="text-center animate-fade-in-up hover-lift group" style="animation-delay: 0.7s;">
+                    <div class="text-5xl headline-font text-warning mb-4 group-hover:animate-heartbeat">24/7</div>
+                    <div class="text-xl body-font-semibold text-white mb-2 group-hover:text-warning transition-colors"><span class="highlight-warning">AI</span> Working</div>
+                    <div class="text-gray-400 body-font">Never stops <span class="highlight-primary">optimizing</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-darkgray/50 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full animate-float-slow blur-xl"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 bg-accent/10 rounded-full animate-float blur-xl" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- About Content -->
+                <div class="animate-fade-in-left">
+                    <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                        <i class="fas fa-users text-primary mr-2 animate-bounce-gentle"></i>
+                        <span class="text-primary body-font-semibold text-sm">About <span class="highlight-accent">ZapToro AI</span></span>
+                    </div>
+                    
+                    <h2 class="text-4xl lg:text-5xl headline-font mb-6 animate-tracking-in">
+                        The Future of <span class="gradient-text">Lead Generation</span>
+                    </h2>
+                    
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.3s;">
+                        Founded by <span class="highlight-accent">AI experts</span> and <span class="highlight-primary">marketing veterans</span>, ZapToro AI combines <span class="highlight-success">cutting-edge</span> artificial intelligence
+                        with proven marketing strategies to deliver <span class="highlight-warning">unprecedented</span> results and measurable growth for our clients. We blend research-grade models with hands-on
+                        marketing execution to optimize funnels, reduce cost-per-lead, and improve conversion rates across channels.
+                    </p>
+                </div>
+
+                <!-- Right column: supporting media -->
+                <div class="animate-fade-in-right">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center" alt="Team collaborating on AI and marketing strategy" class="w-full h-64 object-cover rounded-2xl scale-on-scroll" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-dark/90 border-t border-lightgray/20">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-2">© <span id="year"></span> ZapToro AI — All rights reserved.</div>
+            <div class="space-x-4">
+                <a href="#home" class="hover:text-primary">Home</a>
+                <a href="#services" class="hover:text-primary">Services</a>
+                <a href="#results" class="hover:text-primary">Results</a>
+                <a href="#contact" class="hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Call to Action -->
+    <section id="cta-bottom" class="py-16 bg-primary/95 text-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl headline-font text-dark mb-4">Ready to turn your traffic into customers?</h3>
+            <p class="max-w-2xl mx-auto text-dark/80 mb-6">Book a free AI audit and we'll show you quick wins tailored to your funnel — no hype, just measurable steps.</p>
+            <a href="#contact" class="inline-block bg-dark text-white px-8 py-3 rounded-lg body-font-semibold hover:opacity-90 transition">Book your free audit</a>
+        </div>
+    </section>
+
+    <script>
+        // Set current year in footer
+        try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e){}
+    </script>
+
+    <script>
+        // Scroll-based scale/translate for elements with .scale-on-scroll or .parallax-video
+        (function(){
+            const ease = v => 1 - Math.pow(1 - v, 3);
+            const targets = Array.from(document.querySelectorAll('.scale-on-scroll, .parallax-video'));
+            if(!targets.length) return;
+
+            function onIntersect(entries){
+                entries.forEach(entry => {
+                    const el = entry.target;
+                    if(entry.isIntersecting){
+                        el.classList.add('in-view');
+                    } else {
+                        el.classList.remove('in-view');
+                    }
+                });
+            }
+
+            const io = new IntersectionObserver(onIntersect, {threshold: Array.from({length:21}, (_,i)=>i/20)});
+            targets.forEach(t=> io.observe(t));
+
+            // Continuous render loop for smooth transforms based on viewport position
+            function render(){
+                targets.forEach(el=>{
+                    const rect = el.getBoundingClientRect();
+                    const vh = window.innerHeight || document.documentElement.clientHeight;
+                    const visible = Math.max(0, Math.min(rect.bottom, vh) - Math.max(rect.top, 0));
+                    const ratio = visible / Math.min(rect.height, vh);
+                    // map ratio to scale (0.95 -> 1.08) and translateY (-20px -> 0)
+                    const s = 0.95 + ease(ratio) * (1.08 - 0.95);
+                    const ty = (1 - ease(ratio)) * 20; // px
+                    el.style.transform = `translateY(${ty}px) scale(${s})`;
+                    el.style.willChange = 'transform';
+                });
+                requestAnimationFrame(render);
+            }
+            requestAnimationFrame(render);
+        })();
+    </script>
+
+        <script>
+            // Animated network nodes and counters/progress on scroll
+            (function(){
+                // network subtle motion
+                const svg = document.getElementById('networkViz');
+                if(svg){
+                    const nodes = svg.querySelectorAll('.node');
+                    const links = svg.querySelectorAll('.link');
+                    let t = 0;
+                    function tick(){
+                        t += 0.016;
+                        nodes.forEach((n, i)=>{
+                            const baseX = parseFloat(n.getAttribute('cx'));
+                            const baseY = parseFloat(n.getAttribute('cy'));
+                            const dx = Math.sin(t * (0.6 + i*0.1) + i) * 2.2;
+                            const dy = Math.cos(t * (0.7 + i*0.07) + i) * 1.6;
+                            n.setAttribute('cx', baseX + dx);
+                            n.setAttribute('cy', baseY + dy);
+                            n.style.filter = `drop-shadow(0 0 ${2 + Math.abs(Math.sin(t+i))*4}px rgba(0,212,255,0.08))`;
+                        });
+                        // subtle pulsate links opacity
+                        links.forEach((l, i)=>{
+                            l.style.strokeOpacity = 0.08 + Math.abs(Math.sin(t*0.9 + i))*0.06;
+                        });
+                        requestAnimationFrame(tick);
+                    }
+                    requestAnimationFrame(tick);
+                }
+
+                // counters (data-target) animate when visible
+                const counters = Array.from(document.querySelectorAll('.counter'));
+                if(counters.length){
+                    const animateCounter = (el, target)=>{
+                        const start = 0;
+                        const duration = 1400;
+                        const startTs = performance.now();
+                        function frame(ts){
+                            const p = Math.min(1, (ts - startTs)/duration);
+                            const eased = 1 - Math.pow(1 - p, 3);
+                            const val = Math.round(start + eased*(target - start));
+                            el.textContent = val + (target >= 100 && el.textContent.trim().endsWith('%') ? '%' : '');
+                            if(p < 1) requestAnimationFrame(frame);
+                        }
+                        requestAnimationFrame(frame);
+                    };
+
+                    const cIo = new IntersectionObserver((entries, o)=>{
+                        entries.forEach(en=>{
+                            if(en.isIntersecting){
+                                const el = en.target;
+                                const t = parseInt(el.getAttribute('data-target')||0,10);
+                                animateCounter(el, t);
+                                o.unobserve(el);
+                            }
+                        });
+                    }, {threshold:0.4});
+
+                    counters.forEach(c=> cIo.observe(c));
+                }
+
+                // Progress bars: add small animated fills if .progress-bar exists
+                const bars = Array.from(document.querySelectorAll('.progress-bar'));
+                if(bars.length){
+                    const bIo = new IntersectionObserver((entries, o)=>{
+                        entries.forEach(en=>{
+                            if(en.isIntersecting){
+                                const bar = en.target;
+                                const p = parseInt(bar.getAttribute('data-percent')||'60',10);
+                                const fill = bar.querySelector('.fill');
+                                if(fill){
+                                    fill.style.width = p + '%';
+                                    fill.style.transition = 'width 1100ms cubic-bezier(.2,.9,.2,1)';
+                                }
+                                o.unobserve(bar);
+                            }
+                        });
+                    }, {threshold:0.3});
+                    bars.forEach(b=> bIo.observe(b));
+                }
+            })();
+        </script>
+
+</body>
+</html>
