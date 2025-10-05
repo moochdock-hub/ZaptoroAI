@@ -589,152 +589,160 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (updated) -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-        <!-- Hero Video Background (UPDATED) -->
-        <video autoplay muted loop playsinline preload="metadata"
-            class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
-            poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80">
-            <source src="https://videos.pexels.com/video-files/2278095/2278095-uhd_3840_2160_30fps.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/7710243/7710243-uhd_3840_2160_25fps.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/4098773/4098773-uhd_3840_2160_30fps.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-gradient-to-br from-dark/80 via-primary/30 to-dark/70 z-10"></div>
-        <div class="container mx-auto px-6 relative z-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
-                <!-- Hero Content -->
-                <div class="animate-fade-in-up">
-                    <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                        <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
-                        <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
-                    </div>
-                    
-                    <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
-                        ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
-                    </h1>
-                    
-                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.5s;">
-                        The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
-                    </p>
-                    
-                    <!-- Benefits -->
-                    <div class="grid md:grid-cols-2 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-clock text-primary text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-primary">Automated campaigns</span> that work around the clock</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bolt text-accent text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-accent">Lightning-fast</span> lead delivery (speed to lead)</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-sync text-success text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-success">24/7 prospecting</span> (never sleeps)</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-chart-line text-warning text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-warning">Bull market results</span> through automation</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
-                        <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat hover-lift relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-rocket mr-2"></i>
-                                Unleash ZapToro AI
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                        <button class="border-2 border-accent text-accent hover:bg-accent hover:text-dark px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 hover:animate-wiggle hover-lift relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-play mr-2"></i>
-                                See Automation in Action
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                    </div>
-                    
-                    <!-- Automated Stats -->
-                    <div class="grid grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.9s;">
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
-                        </div>
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="150000" style="animation-delay: 0.2s;">0</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
-                        </div>
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce" style="animation-delay: 0.4s;">24/7</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
-                        </div>
-                    </div>
-                </div>
+      <!-- New video background + fallback image -->
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata"
+             class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
+             poster="assets/hero-precision.jpg">
+        <source src="https://videos.pexels.com/video-files/6074396/6074396-uhd_4096_2160_24fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/5728405/5728405-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      </video>
 
-                <!-- Hero Media -->
-                <div class="relative animate-fade-in-right" style="animation-delay: 0.3s;">
-                    <div class="relative">
-                        <!-- Main Hero Image with Enhanced Styling -->
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
-                            <img 
-                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&crop=center" 
-                                alt="AI-powered business analytics dashboard showing real-time lead generation metrics and conversion data" 
-                                class="w-full h-auto object-cover"
-                                loading="eager"
-                            />
-                            <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
-                            
-                            <!-- Play button overlay for video demo -->
-                            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform">
-                                    <i class="fas fa-play ml-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Floating Interactive Cards -->
-                        <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
-                                    <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
-                                    <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift" style="animation-delay: 1s;">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center animate-pulse">
-                                    <i class="fas fa-users text-primary text-sm animate-wiggle"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white body-font-bold text-sm counter" data-target="1247">0</div>
-                                    <div class="text-gray-400 text-xs body-font">New <span class="highlight-primary">Leads</span> Today</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Additional Floating Elements -->
-                        <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
-                        <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm" style="animation-delay: 2s;"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Bottom gradient for smooth section transition -->
-            <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
-        </div>
+      <!-- Image fallback (use your provided photo saved as assets/hero-precision.jpg) -->
+      <div id="heroFallback" class="absolute inset-0 hidden z-0">
+        <img src="assets/hero-precision.jpg"
+             alt="ZapToro AI — precision lead targeting, instant conversion"
+             class="w-full h-full object-cover opacity-40 select-none pointer-events-none" />
+      </div>
+
+      <!-- Readability overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary/30 to-black/70 z-10"></div>
+
+      <div class="container mx-auto px-6 relative z-20">
+          <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
+              <!-- Hero Content -->
+              <div class="animate-fade-in-up">
+                  <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                      <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
+                      <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
+                  </div>
+                  
+                  <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
+                      ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
+                  </h1>
+                  
+                  <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.5s;">
+                      The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
+                  </p>
+                  
+                  <!-- Benefits -->
+                  <div class="grid md:grid-cols-2 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-clock text-primary text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-primary">Automated campaigns</span> that work around the clock</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-bolt text-accent text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-accent">Lightning-fast</span> lead delivery (speed to lead)</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-sync text-success text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-success">24/7 prospecting</span> (never sleeps)</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-chart-line text-warning text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-warning">Bull market results</span> through automation</span>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
+                      <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat hover-lift relative overflow-hidden">
+                          <span class="relative z-10">
+                              <i class="fas fa-rocket mr-2"></i>
+                              Unleash ZapToro AI
+                          </span>
+                          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
+                      </button>
+                      <button class="border-2 border-accent text-accent hover:bg-accent hover:text-dark px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 hover:animate-wiggle hover-lift relative overflow-hidden">
+                          <span class="relative z-10">
+                              <i class="fas fa-play mr-2"></i>
+                              See Automation in Action
+                          </span>
+                          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-energy-flow"></div>
+                      </button>
+                  </div>
+                  
+                  <!-- Automated Stats -->
+                  <div class="grid grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.9s;">
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
+                      </div>
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="150000" style="animation-delay: 0.2s;">0</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
+                      </div>
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce" style="animation-delay: 0.4s;">24/7</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Hero Media -->
+              <div class="relative animate-fade-in-right" style="animation-delay: 0.3s;">
+                  <div class="relative">
+                      <!-- Main Hero Image with Enhanced Styling -->
+                      <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
+                          <img 
+                              src="assets/hero-precision.jpg"
+                              alt="ZapToro AI — precision lead targeting, instant conversion"
+                              class="w-full h-auto object-cover"
+                          />
+                          <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
+                          
+                          <!-- Play button overlay for video demo -->
+                          <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                              <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform">
+                                  <i class="fas fa-play ml-1"></i>
+                              </button>
+                          </div>
+                      </div>
+                      
+                      <!-- Floating Interactive Cards -->
+                      <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
+                          <div class="flex items-center space-x-3">
+                              <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
+                                  <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
+                              </div>
+                              <div>
+                                  <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
+                                  <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift" style="animation-delay: 1s;">
+                          <div class="flex items-center space-x-3">
+                              <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center animate-pulse">
+                                  <i class="fas fa-users text-primary text-sm animate-wiggle"></i>
+                              </div>
+                              <div>
+                                  <div class="text-white body-font-bold text-sm counter" data-target="1247">0</div>
+                                  <div class="text-gray-400 text-xs body-font">New <span class="highlight-primary">Leads</span> Today</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Additional Floating Elements -->
+                      <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
+                      <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm" style="animation-delay: 2s;"></div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Bottom gradient for smooth section transition -->
+          <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
+      </div>
     </section>
 
     <!-- Why ZapToro AI Section -->
@@ -1015,11 +1023,11 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0%</div>
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-success">Increase</span></div>
                         </div>
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
                         </div>
                     </div>
@@ -1048,11 +1056,11 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0%</div>
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0</div>
                             <div class="text-sm text-gray-400 body-font">Cost <span class="highlight-success">Reduction</span></div>
                         </div>
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
                         </div>
                     </div>
@@ -1184,7 +1192,7 @@
                             </div>
                             
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Company Website</label>
+                                                               <label class="block text-sm body-font-bold text-gray-700 mb-2">Company Website</label>
                                 <input id="website" name="website" type="url" 
                                        class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
                                        placeholder="https://yoursite.com">
@@ -1226,66 +1234,75 @@
         </div>
     </section>
 
-    <!-- FIX: Replace corrupted bottom script with a clean one -->
-    <!-- Remove the broken script block below and use this one instead -->
+    <!-- Add near the bottom (before </body>) to handle video fallback -->
     <script>
-    (function(){
-      // Footer year
-      const y = document.getElementById('year');
-      if (y) y.textContent = new Date().getFullYear();
+(function(){
+  // Hero video -> image fallback (safe, once)
+  var v = document.getElementById('heroVideo');
+  var f = document.getElementById('heroFallback');
+  function fallback(){ try{ if(v && v.parentNode) v.parentNode.removeChild(v); }catch(e){} if(f) f.classList.remove('hidden'); }
+  if (v && f) {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      fallback();
+    } else {
+      v.play().catch(fallback);
+      ['error','stalled','abort','suspend'].forEach(function(ev){ v.addEventListener(ev, fallback, { once:true }); });
+    }
+  }
+})();
+</script>
 
-      // Mobile menu
-      const menuBtn = document.getElementById('mobileMenuBtn');
-      const menu = document.getElementById('mobileMenu');
-      if (menuBtn && menu) menuBtn.addEventListener('click', ()=> menu.classList.toggle('hidden'));
+<!-- Clean unified scripts: footer year, mobile menu, counters, reveal animations -->
+<script>
+(function(){
+  // Footer year
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
 
-      // Counter animation
-      function animateCounter(el, target) {
-        const duration = 1800;
-        const start = 0;
-        const t0 = performance.now();
-        function step(now){
-          const p = Math.min((now - t0)/duration, 1);
-          const eased = 1 - Math.pow(1 - p, 3);
-          const val = Math.floor(start + (target - start) * eased);
-          if (el.dataset.format === 'percent' || (el.textContent || '').includes('%')) {
-            el.textContent = val + '%';
-          } else {
-            el.textContent = val.toLocaleString();
-          }
-          if (p < 1) requestAnimationFrame(step);
+  // Mobile menu
+  var btn = document.getElementById('mobileMenuBtn');
+  var menu = document.getElementById('mobileMenu');
+  if (btn && menu) btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+
+  // Counters on view
+  function animateCounter(el, target){
+    var dur = 1800, t0 = performance.now();
+    function step(t){
+      var p = Math.min((t - t0)/dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      var val = Math.floor(target * e);
+      if (el.dataset.format === 'percent' || (el.textContent||'').indexOf('%') !== -1) el.textContent = val + '%';
+      else el.textContent = val.toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('.counter[data-target]');
+  if (counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if (ent.isIntersecting){
+          var t = parseInt(ent.target.getAttribute('data-target')||'0',10);
+          animateCounter(ent.target, t);
+          io.unobserve(ent.target);
         }
-        requestAnimationFrame(step);
-      }
-      const counters = document.querySelectorAll('.counter[data-target]');
-      if (counters.length){
-        const io = new IntersectionObserver(entries=>{
-          entries.forEach(e=>{
-            if (e.isIntersecting){
-              const t = parseInt(e.target.getAttribute('data-target'), 10) || 0;
-              animateCounter(e.target, t);
-              io.unobserve(e.target);
-            }
-          });
-        }, { threshold: 0.5 });
-        counters.forEach(c=> io.observe(c));
-      }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function(c){ io.observe(c); });
+  }
 
-      // Start reveal animations when visible
-      const animated = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
-      if (animated.length){
-        animated.forEach(el => el.style.animationPlayState = 'paused');
-        const so = new IntersectionObserver(entries=>{
-          entries.forEach(e=>{
-            if (e.isIntersecting){
-              e.target.style.animationPlayState = 'running';
-              so.unobserve(e.target);
-            }
-          });
-        }, { threshold: 0.1 });
-        animated.forEach(el=> so.observe(el));
-      }
-    })();
-    </script>
+  // Reveal animations
+  var animated = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
+  if (animated.length){
+    animated.forEach(function(el){ el.style.animationPlayState = 'paused'; });
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if (ent.isIntersecting){ ent.target.style.animationPlayState = 'running'; so.unobserve(ent.target); }
+      });
+    }, { threshold: 0.1 });
+    animated.forEach(function(el){ so.observe(el); });
+  }
+})();
+</script>
 </body>
 </html>
