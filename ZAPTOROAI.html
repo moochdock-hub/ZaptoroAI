@@ -589,152 +589,160 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (updated) -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-        <!-- Hero Video Background (UPDATED) -->
-        <video autoplay muted loop playsinline preload="metadata"
-            class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
-            poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80">
-            <source src="https://videos.pexels.com/video-files/2278095/2278095-uhd_3840_2160_30fps.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/7710243/7710243-uhd_3840_2160_25fps.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/4098773/4098773-uhd_3840_2160_30fps.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-gradient-to-br from-dark/80 via-primary/30 to-dark/70 z-10"></div>
-        <div class="container mx-auto px-6 relative z-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
-                <!-- Hero Content -->
-                <div class="animate-fade-in-up">
-                    <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                        <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
-                        <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
-                    </div>
-                    
-                    <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
-                        ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
-                    </h1>
-                    
-                    <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.5s;">
-                        The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
-                    </p>
-                    
-                    <!-- Benefits -->
-                    <div class="grid md:grid-cols-2 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-clock text-primary text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-primary">Automated campaigns</span> that work around the clock</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bolt text-accent text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-accent">Lightning-fast</span> lead delivery (speed to lead)</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-sync text-success text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-success">24/7 prospecting</span> (never sleeps)</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-chart-line text-warning text-sm"></i>
-                            </div>
-                            <span class="text-gray-300 body-font"><span class="highlight-warning">Bull market results</span> through automation</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
-                        <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat hover-lift relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-rocket mr-2"></i>
-                                Unleash ZapToro AI
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                        <button class="border-2 border-accent text-accent hover:bg-accent hover:text-dark px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 hover:animate-wiggle hover-lift relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-play mr-2"></i>
-                                See Automation in Action
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                    </div>
-                    
-                    <!-- Automated Stats -->
-                    <div class="grid grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.9s;">
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
-                        </div>
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="150000" style="animation-delay: 0.2s;">0</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
-                        </div>
-                        <div class="text-center hover-lift">
-                            <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce" style="animation-delay: 0.4s;">24/7</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
-                        </div>
-                    </div>
-                </div>
+      <!-- New video background + fallback image -->
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata"
+             class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
+             poster="assets/hero-precision.jpg">
+        <source src="https://videos.pexels.com/video-files/6074396/6074396-uhd_4096_2160_24fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/5728405/5728405-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      </video>
 
-                <!-- Hero Media -->
-                <div class="relative animate-fade-in-right" style="animation-delay: 0.3s;">
-                    <div class="relative">
-                        <!-- Main Hero Image with Enhanced Styling -->
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
-                            <img 
-                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&crop=center" 
-                                alt="AI-powered business analytics dashboard showing real-time lead generation metrics and conversion data" 
-                                class="w-full h-auto object-cover"
-                                loading="eager"
-                            />
-                            <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
-                            
-                            <!-- Play button overlay for video demo -->
-                            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform">
-                                    <i class="fas fa-play ml-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Floating Interactive Cards -->
-                        <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
-                                    <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
-                                    <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift" style="animation-delay: 1s;">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center animate-pulse">
-                                    <i class="fas fa-users text-primary text-sm animate-wiggle"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white body-font-bold text-sm counter" data-target="1247">0</div>
-                                    <div class="text-gray-400 text-xs body-font">New <span class="highlight-primary">Leads</span> Today</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Additional Floating Elements -->
-                        <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
-                        <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm" style="animation-delay: 2s;"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Bottom gradient for smooth section transition -->
-            <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
-        </div>
+      <!-- Image fallback (use your provided photo saved as assets/hero-precision.jpg) -->
+      <div id="heroFallback" class="absolute inset-0 hidden z-0">
+        <img src="assets/hero-precision.jpg"
+             alt="ZapToro AI — precision lead targeting, instant conversion"
+             class="w-full h-full object-cover opacity-40 select-none pointer-events-none" />
+      </div>
+
+      <!-- Readability overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary/30 to-black/70 z-10"></div>
+
+      <div class="container mx-auto px-6 relative z-20">
+          <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
+              <!-- Hero Content -->
+              <div class="animate-fade-in-up">
+                  <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                      <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
+                      <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
+                  </div>
+                  
+                  <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
+                      ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
+                  </h1>
+                  
+                  <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font" style="animation-delay: 0.5s;">
+                      The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
+                  </p>
+                  
+                  <!-- Benefits -->
+                  <div class="grid md:grid-cols-2 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-clock text-primary text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-primary">Automated campaigns</span> that work around the clock</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-bolt text-accent text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-accent">Lightning-fast</span> lead delivery (speed to lead)</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-sync text-success text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-success">24/7 prospecting</span> (never sleeps)</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                          <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
+                              <i class="fas fa-chart-line text-warning text-sm"></i>
+                          </div>
+                          <span class="text-gray-300 body-font"><span class="highlight-warning">Bull market results</span> through automation</span>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
+                      <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow hover:animate-heartbeat hover-lift relative overflow-hidden">
+                          <span class="relative z-10">
+                              <i class="fas fa-rocket mr-2"></i>
+                              Unleash ZapToro AI
+                          </span>
+                          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
+                      </button>
+                      <button class="border-2 border-accent text-accent hover:bg-accent hover:text-dark px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 hover:animate-wiggle hover-lift relative overflow-hidden">
+                          <span class="relative z-10">
+                              <i class="fas fa-play mr-2"></i>
+                              See Automation in Action
+                          </span>
+                          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-energy-flow"></div>
+                      </button>
+                  </div>
+                  
+                  <!-- Automated Stats -->
+                  <div class="grid grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.9s;">
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
+                      </div>
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="150000" style="animation-delay: 0.2s;">0</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
+                      </div>
+                      <div class="text-center hover-lift">
+                          <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce" style="animation-delay: 0.4s;">24/7</div>
+                          <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Hero Media -->
+              <div class="relative animate-fade-in-right" style="animation-delay: 0.3s;">
+                  <div class="relative">
+                      <!-- Main Hero Image with Enhanced Styling -->
+                      <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
+                          <img 
+                              src="assets/hero-precision.jpg"
+                              alt="ZapToro AI — precision lead targeting, instant conversion"
+                              class="w-full h-auto object-cover"
+                          />
+                          <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
+                          
+                          <!-- Play button overlay for video demo -->
+                          <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                              <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform">
+                                  <i class="fas fa-play ml-1"></i>
+                              </button>
+                          </div>
+                      </div>
+                      
+                      <!-- Floating Interactive Cards -->
+                      <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
+                          <div class="flex items-center space-x-3">
+                              <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
+                                  <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
+                              </div>
+                              <div>
+                                  <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
+                                  <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift" style="animation-delay: 1s;">
+                          <div class="flex items-center space-x-3">
+                              <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center animate-pulse">
+                                  <i class="fas fa-users text-primary text-sm animate-wiggle"></i>
+                              </div>
+                              <div>
+                                  <div class="text-white body-font-bold text-sm counter" data-target="1247">0</div>
+                                  <div class="text-gray-400 text-xs body-font">New <span class="highlight-primary">Leads</span> Today</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Additional Floating Elements -->
+                      <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
+                      <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm" style="animation-delay: 2s;"></div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Bottom gradient for smooth section transition -->
+          <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
+      </div>
     </section>
 
     <!-- Why ZapToro AI Section -->
@@ -1015,11 +1023,11 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0%</div>
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-success">Increase</span></div>
                         </div>
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
                         </div>
                     </div>
@@ -1048,11 +1056,11 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0%</div>
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0</div>
                             <div class="text-sm text-gray-400 body-font">Cost <span class="highlight-success">Reduction</span></div>
                         </div>
                         <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0</div>
                             <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
                         </div>
                     </div>
@@ -1155,1099 +1163,6 @@
                                 <div class="flex items-center">
                                     <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
                                         <i class="fas fa-check text-success text-sm"></i>
-
-            function pushMessage(text, from='bot'){
-                const wrap = document.createElement('div');
-                wrap.className = from === 'bot' ? 'text-gray-200 bg-darkgray/60 p-3 rounded-lg' : 'text-dark bg-accent/20 p-3 rounded-lg self-end text-gray-100';
-                wrap.textContent = text;
-                aiMessages.appendChild(wrap);
-                aiMessages.scrollTop = aiMessages.scrollHeight;
-            }
-
-            aiWidget.addEventListener('click', function(){
-                aiPanel.classList.toggle('hidden');
-                if(!aiPanel.classList.contains('hidden')){
-                    pushMessage('Hi — I can answer quick questions or help book your audit. Try: "book a call"');
-                }
-            });
-
-            closeAi.addEventListener('click', function(){
-                aiPanel.classList.add('hidden');
-            });
-
-            aiForm.addEventListener('submit', function(e){
-                e.preventDefault();
-                const text = aiInput.value.trim();
-                if(!text) return;
-                // show user message
-                const userWrap = document.createElement('div');
-                userWrap.className = 'text-gray-900 bg-accent p-2 rounded-lg self-end text-sm';
-                userWrap.textContent = text;
-                aiMessages.appendChild(userWrap);
-                aiInput.value = '';
-                aiMessages.scrollTop = aiMessages.scrollHeight;
-
-                // Check canned patterns
-                let handled = false;
-                for(const c of canned){
-                    if(c.k.test(text)){
-                        setTimeout(()=> pushMessage(c.a, 'bot'), 400);
-                        handled = true;
-                        break;
-                    }
-                }
-
-                if(!handled){
-                    // If you have an AI endpoint you can forward it here. Configure by
-                    // setting window.AI_ENDPOINT to your API URL. The client will POST
-                    // {message: text} and expects {reply: '...'} back.
-                    if(window.AI_ENDPOINT){
-                        pushMessage('Thinking...', 'bot');
-                        fetch(window.AI_ENDPOINT, {
-                            method: 'POST',
-                            headers: {'Content-Type': 'application/json'},
-                            body: JSON.stringify({message: text})
-                        }).then(r=>r.json()).then(json=>{
-                            // remove 'Thinking...' placeholder and append reply
-                            // (naive approach: clear then show reply)
-                            aiMessages.lastChild && aiMessages.removeChild(aiMessages.lastChild);
-                            pushMessage(json.reply || 'Sorry, I had no reply.', 'bot');
-                        }).catch(err=>{
-                            aiMessages.lastChild && aiMessages.removeChild(aiMessages.lastChild);
-                            pushMessage('Sorry — the AI service failed. Try again or book an audit.', 'bot');
-                        });
-                    } else {
-                        // fallback generic reply
-                        setTimeout(()=> pushMessage("Thanks — we've captured that. If you'd like to book an audit say 'book a call' or fill the booking form.", 'bot'), 500);
-                    }
-                }
-            });
-        })();
-    </script>
-
-    <!-- AI Chat Panel (hidden by default) -->
-    <div id="aiPanel" class="fixed bottom-24 right-6 w-96 max-w-full bg-darkgray/95 border border-lightgray/20 rounded-xl shadow-2xl z-70 hidden flex-col overflow-hidden">
-        <div class="px-4 py-3 border-b border-lightgray/20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                    <i class="fas fa-robot text-accent"></i>
-                </div>
-                <div>
-                    <div class="text-white body-font-bold">ZapToro Assistant</div>
-                    <div class="text-xs text-gray-400">AI helper — quick answers & booking assistance</div>
-                </div>
-            </div>
-            <button id="closeAi" class="text-gray-300 hover:text-white"><i class="fas fa-times"></i></button>
-        </div>
-        <div id="aiMessages" class="p-4 h-64 overflow-y-auto space-y-3 body-font text-sm"></div>
-        <form id="aiForm" class="p-4 border-t border-lightgray/20 flex items-center gap-3">
-            <input id="aiInput" class="flex-1 bg-dark px-3 py-2 rounded-lg border border-lightgray/20 focus:outline-none text-gray-200" placeholder="Ask me about audits, pricing, or say 'book a call'" />
-            <button class="bg-accent text-dark px-4 py-2 rounded-lg" type="submit">Send</button>
-        </form>
-    </div>
-
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-darkgray/50 relative overflow-hidden">
-        <!-- Animated Background with Success Images -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/20 to-accent/20 animate-gradient-x"></div>
-            
-            <!-- Background Success Images -->
-            <div class="absolute top-10 right-10 opacity-30">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" 
-                     alt="Business Success" 
-                     class="w-24 h-24 rounded-full object-cover animate-float" 
-                     loading="eager" />
-            </div>
-            <div class="absolute bottom-20 left-10 opacity-30">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=150&fit=crop" 
-                     alt="Team Success" 
-                     class="w-32 h-32 rounded-full object-cover animate-float" 
-                     style="animation-delay: 0.7s" 
-                     loading="eager" />
-            </div>
-            <div class="absolute top-1/2 left-1/4 opacity-30">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=120&fit=crop" 
-                     alt="Analytics Dashboard" 
-                     class="w-20 h-20 rounded-lg object-cover animate-float" 
-                     style="animation-delay: 1.2s" 
-                     loading="eager" />
-            </div>
-        </div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <div class="inline-flex items-center bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-cogs text-accent mr-2 animate-spin-slow"></i>
-                    <span class="text-accent body-font-semibold text-sm">Choose Your <span class="highlight-primary">Automation</span> Level</span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Two Ways to <span class="gradient-text">Unleash Automation</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    Whether you want complete hands-off automation or prefer to maintain control with our tools, we have the perfect solution for your business.
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                <!-- Full Automation Service -->
-                <div class="bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-xl border-2 border-primary/30 rounded-3xl p-10 transform hover:scale-105 transition-all duration-500 animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
-                    <div class="text-center mb-8">
-                        <div class="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse">
-                            <i class="fas fa-magic text-primary text-3xl"></i>
-                        </div>
-                        <h3 class="text-3xl headline-font text-white mb-4">Full Automation</h3>
-                        <p class="text-lg text-gray-300 mb-6 body-font">
-                            Complete automated lead generation with <span class="highlight-primary">24/7 campaigns</span> and <span class="highlight-accent">real-time reporting</span>. We handle everything while you focus on growth.
-                        </p>
-                    </div>
-
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-primary text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Complete Automation Setup</h4>
-                                <p class="text-gray-300 text-sm">Full system configuration and campaign launch</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-accent text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">24/7 Campaign Management</h4>
-                                <p class="text-gray-300 text-sm">Continuous optimization and monitoring</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-success text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Real-Time Reporting</h4>
-                                <p class="text-gray-300 text-sm">Live dashboard with performance metrics</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-warning text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Instant Lead Delivery</h4>
-                                <p class="text-gray-300 text-sm">Hot prospects delivered to your inbox</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-purple-500/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-purple-400 text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Dedicated Account Manager</h4>
-                                <p class="text-gray-300 text-sm">Personal support and strategy optimization</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-primary/20 pt-6">
-                        <div class="text-center mb-6">
-                            <div class="text-gray-300 body-font mb-2">Best for businesses wanting:</div>
-                            <div class="text-primary body-font-bold">Complete hands-off automation</div>
-                        </div>
-                        
-                        <button class="w-full bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-xl body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-rocket mr-2"></i>
-                                Activate System
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Assisted DIY Service -->
-                <div class="bg-gradient-to-br from-accent/10 to-success/10 backdrop-blur-xl border-2 border-accent/30 rounded-3xl p-10 transform hover:scale-105 transition-all duration-500 animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
-                    <div class="text-center mb-8">
-                        <div class="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse">
-                            <i class="fas fa-tools text-accent text-3xl"></i>
-                        </div>
-                        <h3 class="text-3xl headline-font text-white mb-4">Assisted DIY</h3>
-                        <p class="text-lg text-gray-300 mb-6 body-font">
-                            Powerful <span class="highlight-accent">automation tools</span>, proven <span class="highlight-success">templates</span>, and expert <span class="highlight-warning">coaching</span> to run your own campaigns.
-                        </p>
-                    </div>
-
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-accent text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Automation Tools Access</h4>
-                                <p class="text-gray-300 text-sm">Full platform with drag-and-drop automation</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-success/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-success text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Proven Templates</h4>
-                                <p class="text-gray-300 text-sm">Pre-built campaigns that convert</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-warning text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Weekly Coaching Calls</h4>
-                                <p class="text-gray-300 text-sm">Expert guidance and optimization tips</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-primary text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Training & Tutorials</h4>
-                                <p class="text-gray-300 text-sm">Step-by-step automation mastery</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-3">
-                            <div class="w-6 h-6 bg-purple-500/20 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-check text-purple-400 text-sm"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white body-font-bold mb-1">Community Access</h4>
-                                <p class="text-gray-300 text-sm">Private group with fellow entrepreneurs</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-accent/20 pt-6">
-                        <div class="text-center mb-6">
-                            <div class="text-gray-300 body-font mb-2">Best for businesses wanting:</div>
-                            <div class="text-accent body-font-bold">Control with expert guidance</div>
-                        </div>
-                        
-                        <button class="w-full bg-accent hover:bg-accent/80 text-dark px-8 py-4 rounded-xl body-font-bold text-lg transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
-                            <span class="relative z-10">
-                                <i class="fas fa-tools mr-2"></i>
-                                Try Tools
-                            </span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Comparison -->
-            <div class="mt-16 bg-lightgray/10 rounded-2xl p-8">
-                <h3 class="text-2xl headline-font text-white mb-6 text-center">Perfect for Every Business Stage</h3>
-                <div class="grid md:grid-cols-2 gap-8 text-center">
-                    <div>
-                        <h4 class="text-primary body-font-bold mb-2">Full Automation</h4>
-                        <p class="text-gray-300 text-sm">Scale-ups, enterprises, busy executives who want results without the work</p>
-                    </div>
-                    <div>
-                        <h4 class="text-accent body-font-bold mb-2">Assisted DIY</h4>
-                        <p class="text-gray-300 text-sm">Startups, agencies, entrepreneurs who want to learn while they earn</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How Automation Works Process -->
-    <section id="automation-process" class="py-20 bg-darkgray/40 relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <div class="inline-flex items-center bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-cogs text-accent mr-2 animate-spin-slow"></i>
-                    <span class="text-accent body-font-semibold text-sm">How <span class="highlight-primary">Automation</span> Works</span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Simple 5-Step <span class="gradient-text">Automation Process</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    Our proven automation system turns prospects into customers while you focus on growing your business. Set it up once, let it run forever.
-                </p>
-                
-                <!-- Technology Demo Video -->
-                <div class="max-w-4xl mx-auto mb-12 animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/30">
-                        <div class="aspect-video bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center relative" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=450&fit=crop'); background-size: cover; background-position: center;">
-                            <div class="absolute inset-0 bg-dark/60"></div>
-                            <div class="text-center z-10">
-                                <div class="w-20 h-20 bg-primary/80 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse shadow-lg">
-                                    <i class="fas fa-play text-3xl text-white"></i>
-                                </div>
-                                <p class="text-white text-xl font-bold mb-2">See ZapToro AI Automation in Action</p>
-                                <p class="text-gray-200 text-lg">Interactive Demo • 2 min overview</p>
-                            </div>
-                            <!-- Background tech pattern -->
-                            <div class="absolute inset-0 opacity-20">
-                                <div class="absolute top-4 left-4 w-16 h-16 border border-primary/30 rounded-lg animate-float"></div>
-                                <div class="absolute top-8 right-8 w-12 h-12 border border-accent/30 rounded-full animate-float" style="animation-delay: 0.5s"></div>
-                                <div class="absolute bottom-8 left-8 w-20 h-20 border border-primary/20 rounded-lg animate-float" style="animation-delay: 1s"></div>
-                                <div class="absolute bottom-4 right-4 w-14 h-14 border border-accent/20 rounded-full animate-float" style="animation-delay: 1.5s"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Multimedia Showcase Banner -->
-            <div class="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-2xl p-8 mb-12 max-w-6xl mx-auto border border-primary/20">
-                <h3 class="text-2xl text-center text-white font-bold mb-6">🎬 Interactive Technology Showcase</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-video text-primary text-2xl"></i>
-                        </div>
-                        <p class="text-white font-medium">Live Demo Videos</p>
-                        <p class="text-gray-300 text-sm">See AI in action</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-images text-accent text-2xl"></i>
-                        </div>
-                        <p class="text-white font-medium">Technology Gallery</p>
-                        <p class="text-gray-300 text-sm">Visual showcases</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-play-circle text-primary text-2xl"></i>
-                        </div>
-                        <p class="text-white font-medium">Interactive Elements</p>
-                        <p class="text-gray-300 text-sm">Engaging experiences</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="max-w-5xl mx-auto">
-                <!-- Step 1: Setup -->
-                <div class="flex flex-col lg:flex-row items-center gap-8 mb-16 animate-fade-in-left">
-                    <div class="lg:w-1/3">
-                        <div class="w-24 h-24 bg-primary/20 border border-primary/30 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 animate-pulse">
-                            <span class="text-3xl headline-font text-primary">1</span>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <h3 class="text-3xl headline-font text-white mb-4"><span class="highlight-primary">Setup</span> Automated System</h3>
-                        <p class="text-gray-300 body-font text-lg mb-4">Configure your automated system in under 24 hours. Connect your CRM, set your targeting parameters, and activate the automation engine.</p>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Quick 24-hour configuration</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>CRM integration setup</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Targeting parameters configured</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 2: Target -->
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-8 mb-16 animate-fade-in-right">
-                    <div class="lg:w-1/3">
-                        <div class="w-24 h-24 bg-accent/20 border border-accent/30 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 animate-pulse">
-                            <span class="text-3xl headline-font text-accent">2</span>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3 lg:text-right">
-                        <h3 class="text-3xl headline-font text-white mb-4">Find Prospects from <span class="highlight-accent">250M+ Database</span></h3>
-                        <p class="text-gray-300 body-font text-lg mb-4">Access our massive 250+ million prospect database. Automation identifies and targets your ideal customers automatically.</p>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-accent mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>250M+ prospect database</li>
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-accent mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>Automated prospect identification</li>
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-accent mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>Ideal customer targeting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 3: Launch -->
-                <div class="flex flex-col lg:flex-row items-center gap-8 mb-16 animate-fade-in-left">
-                    <div class="lg:w-1/3">
-                        <div class="w-24 h-24 bg-success/20 border border-success/30 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 animate-pulse">
-                            <span class="text-3xl headline-font text-success">3</span>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <h3 class="text-3xl headline-font text-white mb-4"><span class="highlight-success">Launch</span> Personalized Sequences</h3>
-                        <p class="text-gray-300 body-font text-lg mb-4">Automated personalized sequences launch instantly. Each prospect receives tailored messaging based on their behavior and profile data.</p>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Automated personalized sequences</li>
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Tailored messaging per prospect</li>
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Behavior-based personalization</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 4: Monitor -->
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-8 mb-16 animate-fade-in-right">
-                    <div class="lg:w-1/3">
-                        <div class="w-24 h-24 bg-warning/20 border border-warning/30 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 animate-pulse">
-                            <span class="text-3xl headline-font text-warning">4</span>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3 lg:text-right">
-                        <h3 class="text-3xl headline-font text-white mb-4"><span class="highlight-warning">24/7 Tracking</span> & Monitoring</h3>
-                        <p class="text-gray-300 body-font text-lg mb-4">Real-time monitoring tracks every interaction, optimizes performance automatically, and adjusts strategies for maximum results.</p>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-warning mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>24/7 real-time tracking</li>
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-warning mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>Automatic performance optimization</li>
-                            <li class="flex items-center lg:justify-end"><i class="fas fa-check text-warning mr-2 lg:order-2 lg:ml-2 lg:mr-0"></i>Strategy auto-adjustment</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 5: Deliver -->
-                <div class="flex flex-col lg:flex-row items-center gap-8 mb-16 animate-fade-in-left">
-                    <div class="lg:w-1/3">
-                        <div class="w-24 h-24 bg-purple-500/20 border border-purple-500/30 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 animate-pulse">
-                            <span class="text-3xl headline-font text-purple-400">5</span>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <h3 class="text-3xl headline-font text-white mb-4"><span class="highlight-purple-400">Instant Lead Delivery</span> to Inbox</h3>
-                        <p class="text-gray-300 body-font text-lg mb-4">Qualified leads are instantly delivered to your inbox. No delays, no manual work - just hot prospects ready to convert.</p>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Instant lead delivery</li>
-                            <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Direct to your inbox</li>
-                            <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Hot prospects ready to convert</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Automation Timeline -->
-            <div class="bg-lightgray/10 rounded-2xl p-8 mt-12">
-                <h3 class="text-2xl headline-font text-white mb-6 text-center">Complete Automation Timeline</h3>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white body-font-bold mr-3">0</div>
-                        <span class="text-gray-300">Setup (24hrs)</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-400 hidden md:block"></i>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white body-font-bold mr-3">1</div>
-                        <span class="text-gray-300">Launch automation</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-400 hidden md:block"></i>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center text-white body-font-bold mr-3">7</div>
-                        <span class="text-gray-300">First leads delivered</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-400 hidden md:block"></i>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-warning rounded-full flex items-center justify-center text-white body-font-bold mr-3">∞</div>
-                        <span class="text-gray-300">Runs forever</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section id="guarantee" class="py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-success/10 via-dark to-success/10"></div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-flex items-center bg-success/20 border border-success/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-shield-alt text-success mr-2 animate-pulse"></i>
-                    <span class="text-success body-font-semibold text-sm">Risk-Free <span class="highlight-warning">Guarantee</span></span>
-                </div>
-                
-                <h2 class="text-4xl lg:text-6xl headline-font mb-8 animate-tracking-in">
-                    Our Speed-to-Lead <span class="gradient-text">Guarantee</span>
-                </h2>
-                
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 lg:p-12 animate-fade-in-up">
-                    <div class="text-8xl text-accent mb-6 animate-bounce-gentle">⚡</div>
-                    
-                    <h3 class="text-3xl headline-font text-white mb-6">Lightning-Fast Results or You Don't Pay</h3>
-                    
-                    <p class="text-xl text-gray-300 mb-8 leading-relaxed body-font">
-                        Our automation system is so fast and reliable, we guarantee <span class="highlight-accent">50 qualified leads within 60 days</span> or you don't pay. Unlike manual prospecting, our system never sleeps, never gets tired, and delivers leads at <span class="highlight-primary">lightning speed 24/7</span>.
-                    </p>
-                    
-                    <div class="grid md:grid-cols-3 gap-6 mb-8">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
-                                <i class="fas fa-bolt text-accent text-2xl"></i>
-                            </div>
-                            <h4 class="text-white body-font-bold mb-2">Speed Promise</h4>
-                            <p class="text-gray-300 text-sm">50 qualified leads in 60 days guaranteed</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
-                                <i class="fas fa-shield-alt text-success text-2xl"></i>
-                            </div>
-                            <h4 class="text-white body-font-bold mb-2">Risk-Free</h4>
-                            <p class="text-gray-300 text-sm">Don't pay if we don't deliver</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-spin-slow">
-                                <i class="fas fa-sync text-primary text-2xl"></i>
-                            </div>
-                            <h4 class="text-white body-font-bold mb-2">24/7 Automation</h4>
-                            <p class="text-gray-300 text-sm">Never stops working for you</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-success/10 border border-success/30 rounded-xl p-6 mb-6">
-                        <h4 class="text-success body-font-bold text-lg mb-3">What's Covered:</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i>Minimum 50 qualified leads in first 60 days</li>
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i>Lightning-speed delivery (under 30 seconds response time)</li>
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i>24/7 automated prospecting with zero downtime</li>
-                            <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i>Full refund if speed or volume targets aren't met</li>
-                        </ul>
-                    </div>
-                    
-                    <button class="bg-accent hover:bg-accent/80 text-dark px-8 py-4 rounded-xl body-font-bold text-lg transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
-                        <span class="relative z-10">
-                            <i class="fas fa-rocket mr-2"></i>
-                            Activate Speed Guarantee
-                        </span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                    </button>
-                    
-                    <h3 class="text-3xl headline-font text-white mb-6">90-Day Performance Guarantee</h3>
-                    
-                    <p class="text-xl text-gray-300 mb-8 body-font leading-relaxed">
-                        If our AI doesn't <span class="highlight-primary">increase your qualified leads by at least 200%</span> 
-                        within 90 days, we'll work for <span class="highlight-success">FREE</span> until it does. 
-                        Plus, we'll refund every penny of your investment.
-                    </p>
-                    
-                    <div class="grid md:grid-cols-3 gap-6 mb-8">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse">
-                                <i class="fas fa-chart-line text-success text-xl"></i>
-                            </div>
-                            <h4 class="body-font-bold text-white mb-2">200% More Leads</h4>
-                            <p class="text-gray-300 text-sm">Or we keep working for free</p>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse">
-                                <i class="fas fa-money-bill-wave text-primary text-xl"></i>
-                            </div>
-                            <h4 class="body-font-bold text-white mb-2">Full Refund</h4>
-                            <p class="text-gray-300 text-sm">100% money back guarantee</p>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse">
-                                <i class="fas fa-handshake text-accent text-xl"></i>
-                            </div>
-                            <h4 class="body-font-bold text-white mb-2">No Questions</h4>
-                            <p class="text-gray-300 text-sm">Simple, straightforward process</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-400 body-font">
-                        That's how confident we are in our AI technology. You literally cannot lose.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-darkgray/30 relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-quote-left text-primary mr-2"></i>
-                    <span class="text-primary body-font-semibold text-sm">Client <span class="highlight-accent">Success Stories</span></span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    What Our Clients Say About <span class="gradient-text">ZapToro AI</span>
-                </h2>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Sarah Johnson CEO" class="w-12 h-12 rounded-full mr-4" />
-                        <div>
-                            <div class="text-white body-font-bold">Sarah Johnson</div>
-                            <div class="text-gray-400 text-sm">CEO, TechStartup Inc</div>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
-                    <p class="text-gray-300 body-font italic mb-4">
-                        "ZapToro AI completely transformed our lead generation. We went from <span class="highlight-danger">struggling to find qualified leads</span> to having <span class="highlight-success">more opportunities than we can handle</span>. 400% increase in just 6 months!"
-                    </p>
-                    <div class="text-primary body-font-semibold">+400% Revenue Growth</div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Michael Chen CTO" class="w-12 h-12 rounded-full mr-4" />
-                        <div>
-                            <div class="text-white body-font-bold">Michael Chen</div>
-                            <div class="text-gray-400 text-sm">CTO, SaaS Solutions</div>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
-                    <p class="text-gray-300 body-font italic mb-4">
-                        "The AI chatbots alone have been a game-changer. <span class="highlight-accent">24/7 lead qualification</span> means we never miss an opportunity. Our conversion rates have <span class="highlight-success">tripled</span> since implementation."
-                    </p>
-                    <div class="text-accent body-font-semibold">3x Conversion Rate</div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.5s;">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Emily Rodriguez Marketing Director" class="w-12 h-12 rounded-full mr-4" />
-                        <div>
-                            <div class="text-white body-font-bold">Emily Rodriguez</div>
-                            <div class="text-gray-400 text-sm">Marketing Director, GrowthCo</div>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
-                    <p class="text-gray-300 body-font italic mb-4">
-                        "Our cost per lead dropped by <span class="highlight-success">70%</span> while lead quality improved dramatically. The AI's predictive capabilities are <span class="highlight-primary">incredible</span>. Best investment we've ever made."
-                    </p>
-                    <div class="text-success body-font-semibold">-70% Cost Per Lead</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Integration Showcase -->
-    <section id="integrations" class="py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-dark to-primary/5"></div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-plug text-primary mr-2 animate-pulse"></i>
-                    <span class="text-primary body-font-semibold text-sm">Seamless <span class="highlight-accent">Integrations</span></span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    ZapToro AI Connects to Your <span class="gradient-text">Entire Tech Stack</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    Our automation platform integrates with <span class="highlight-primary">500+ tools</span> and platforms, ensuring your lead generation system works seamlessly with your existing workflow.
-                </p>
-                
-                <!-- Integration Preview Images -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/30">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
-                             alt="CRM Integration Dashboard" 
-                             class="w-full h-64 object-cover" 
-                             loading="eager" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-dark/20"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h4 class="text-lg font-bold mb-1 text-primary">CRM Integration</h4>
-                            <p class="text-sm text-gray-200">Seamless data sync with your existing tools</p>
-                        </div>
-                    </div>
-                    
-                    <div class="relative overflow-hidden rounded-2xl">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
-                             alt="Analytics Integration" 
-                             class="w-full h-64 object-cover" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h4 class="text-lg font-bold mb-1">Real-time Analytics</h4>
-                            <p class="text-sm text-gray-300">Track performance across all platforms</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Integration Categories -->
-            <div class="grid lg:grid-cols-3 gap-8 mb-16">
-                <!-- CRM Integrations -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
-                    <div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 animate-pulse">
-                        <i class="fas fa-database text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4"><span class="highlight-primary">CRM Systems</span></h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        Seamlessly sync leads with your CRM for <span class="highlight-primary">instant follow-up</span> and automated pipeline management.
-                    </p>
-                    <div class="grid grid-cols-2 gap-3 text-sm text-gray-300">
-                        <div class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Salesforce</div>
-                        <div class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>HubSpot</div>
-                        <div class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Pipedrive</div>
-                        <div class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Zoho CRM</div>
-                    </div>
-                </div>
-
-                <!-- Email & Communication -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
-                    <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mb-6 animate-pulse">
-                        <i class="fas fa-envelope text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4"><span class="highlight-accent">Email & Communication</span></h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        Connect your email platforms for <span class="highlight-accent">automated sequences</span> and real-time communication tracking.
-                    </p>
-                    <div class="grid grid-cols-2 gap-3 text-sm text-gray-300">
-                        <div class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Gmail</div>
-                        <div class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Outlook</div>
-                        <div class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Mailchimp</div>
-                        <div class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>ActiveCampaign</div>
-                    </div>
-                </div>
-
-                <!-- Analytics & Tracking -->
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.5s;">
-                    <div class="w-16 h-16 bg-success/20 rounded-2xl flex items-center justify-center mb-6 animate-pulse">
-                        <i class="fas fa-chart-line text-success text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4"><span class="highlight-success">Analytics & Tracking</span></h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        Get complete visibility with <span class="highlight-success">real-time analytics</span> and performance tracking across all platforms.
-                    </p>
-                    <div class="grid grid-cols-2 gap-3 text-sm text-gray-300">
-                        <div class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Google Analytics</div>
-                        <div class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Mixpanel</div>
-                        <div class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Segment</div>
-                        <div class="flex items-center"><i class="fas fa-check text-success mr-2"></i>Zapier</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Integration Stats -->
-            <div class="bg-lightgray/10 rounded-2xl p-8 mb-12">
-                <h3 class="text-2xl headline-font text-white mb-6 text-center">Integration Power Stats</h3>
-                <div class="grid md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <div class="text-4xl headline-font text-primary mb-2">500+</div>
-                        <div class="text-gray-300 text-sm">Platform Integrations</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl headline-font text-accent mb-2">&lt;5min</div>
-                        <div class="text-gray-300 text-sm">Setup Time</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl headline-font text-success mb-2">99.9%</div>
-                        <div class="text-gray-300 text-sm">Uptime Guarantee</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl headline-font text-warning mb-2">24/7</div>
-                        <div class="text-gray-300 text-sm">Auto-Sync</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to Action -->
-            <div class="text-center">
-                <h3 class="text-2xl headline-font text-white mb-4">Ready to Connect Your Tech Stack?</h3>
-                <p class="text-gray-300 mb-6 body-font">See how ZapToro AI integrates with your existing tools in under 5 minutes.</p>
-                <button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-xl body-font-bold text-lg transition-all duration-300 transform hover:scale-105 animate-glow relative overflow-hidden">
-                    <span class="relative z-10">
-                        <i class="fas fa-plug mr-2"></i>
-                        View All Integrations
-                    </span>
-                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-energy-flow"></div>
-                </button>
-            </div>
-                <div class="inline-flex items-center bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-plug text-accent mr-2 animate-wiggle"></i>
-                    <span class="text-accent body-font-semibold text-sm">Seamless <span class="highlight-primary">Integrations</span></span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Works With Your <span class="gradient-text">Existing Tools</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    No complicated setups. Our AI integrates seamlessly with the platforms you're already using.
-                </p>
-            </div>
-
-            <!-- Integration Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-xl p-6 text-center hover-lift animate-fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <i class="fab fa-google text-blue-400 text-xl"></i>
-                    </div>
-                    <h4 class="text-white body-font-bold mb-2">Google Ads</h4>
-                    <p class="text-gray-400 text-sm">Smart bidding & targeting</p>
-                </div>
-
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-xl p-6 text-center hover-lift animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <i class="fab fa-facebook text-blue-500 text-xl"></i>
-                    </div>
-                    <h4 class="text-white body-font-bold mb-2">Facebook</h4>
-                    <p class="text-gray-400 text-sm">Lookalike audiences</p>
-                </div>
-
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-xl p-6 text-center hover-lift animate-fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-envelope text-orange-400 text-xl"></i>
-                    </div>
-                    <h4 class="text-white body-font-bold mb-2">Email Platforms</h4>
-                    <p class="text-gray-400 text-sm">Mailchimp, Klaviyo, etc.</p>
-                </div>
-
-                <div class="bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-xl p-6 text-center hover-lift animate-fade-in-up" style="animation-delay: 0.4s;">
-                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-chart-bar text-purple-400 text-xl"></i>
-                    </div>
-                    <h4 class="text-white body-font-bold mb-2">CRM Systems</h4>
-                    <p class="text-gray-400 text-sm">Salesforce, HubSpot, etc.</p>
-                </div>
-            </div>
-
-            <!-- Setup Process -->
-            <div class="bg-lightgray/10 rounded-2xl p-8 text-center">
-                <h3 class="text-2xl headline-font text-white mb-6">Setup in Under 24 Hours</h3>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white body-font-bold mr-3">1</div>
-                        <span class="text-gray-300">Connect platforms</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-400 hidden md:block"></i>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white body-font-bold mr-3">2</div>
-                        <span class="text-gray-300">AI learns your data</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-400 hidden md:block"></i>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center text-white body-font-bold mr-3">3</div>
-                        <span class="text-gray-300">Start generating leads</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section id="results" class="py-20 relative overflow-hidden">
-        <!-- Parallax Background -->
-        <div class="absolute inset-0 parallax-bg opacity-20" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop&crop=center');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/70"></div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <div class="inline-flex items-center bg-success/20 border border-success/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                    <i class="fas fa-trophy text-success mr-2 animate-bounce-gentle"></i>
-                    <span class="text-success body-font-semibold text-sm">Numbers Don't <span class="highlight-warning">Lie</span></span>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Real Results from <span class="gradient-text">Real Clients</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    See how ZapToro AI has <span class="highlight-primary">transformed</span> businesses across industries with <span class="highlight-success">measurable</span>, <span class="highlight-accent">game-changing</span> results.
-                </p>
-            </div>
-
-            <!-- Case Studies with Enhanced Media -->
-            <div class="grid lg:grid-cols-3 gap-8 mb-16">
-                <!-- Case Study 1 -->
-                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.1s;">
-                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
-                        <img 
-                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop&crop=center" 
-                            alt="E-commerce business dashboard showing 400% revenue increase through AI-powered lead generation" 
-                            class="w-full h-48 object-cover animate-kenburns-top"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
-                            +400%
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">E-commerce</span>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-primary transition-colors">400% Revenue Increase</h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        Fashion retailer increased <span class="highlight-success">online sales</span> by <span class="highlight-primary">400%</span> in 6 months using our AI <span class="highlight-accent">lead scoring</span> and personalization.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="65" style="animation-delay: 0.2s;">0%</div>
-                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Conversion</span> Rate</div>
-                        </div>
-                    </div>
-                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
-                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </button>
-                </div>
-
-                <!-- Case Study 2 -->
-                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.3s;">
-                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
-                        <img 
-                            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=200&fit=crop&crop=center" 
-                            alt="SaaS company team celebrating 10x lead generation growth with AI technology" 
-                            class="w-full h-48 object-cover animate-kenburns-top"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute top-4 right-4 bg-accent/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
-                            10x
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">SaaS</span>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-accent transition-colors">10x Lead Generation</h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        B2B SaaS company generated <span class="highlight-accent">10x more</span> qualified leads with our AI <span class="highlight-primary">chatbot</span> and <span class="highlight-success">targeting system</span>.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0%</div>
-                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-success">Increase</span></div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0%</div>
-                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
-                        </div>
-                    </div>
-                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
-                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </button>
-                </div>
-
-                <!-- Case Study 3 -->
-                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.5s;">
-                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
-                        <img 
-                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=200&fit=crop&crop=center" 
-                            alt="Healthcare provider using AI to reduce cost per lead by 70% while improving patient acquisition" 
-                            class="w-full h-48 object-cover animate-kenburns-top"
-                            loading="lazy"
-                        />
-                    <div class="text-gray-400 body-font">Never stops <span class="highlight-primary">optimizing</span></div>
-                    </div>
-                    <div class="mb-4">
-                        <span class="bg-success/20 text-success px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">Healthcare</span>
-                    </div>
-                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-success transition-colors">-70% Cost Per Lead</h3>
-                    <p class="text-gray-300 mb-6 body-font">
-                        Healthcare provider reduced <span class="highlight-success">cost per lead by 70%</span> and improved patient acquisition using our AI <span class="highlight-primary">predictive analytics</span> and <span class="highlight-accent">automation</span>.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0%</div>
-                            <div class="text-sm text-gray-400 body-font">Cost <span class="highlight-success">Reduction</span></div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0%</div>
-                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
-                        </div>
-                    </div>
-                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
-                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer CTA Section -->
-    <section id="footer-cta" class="py-20 bg-gradient-to-br from-primary/90 to-accent/90 relative overflow-hidden">
-        <!-- Background Effects -->
-        <div class="absolute inset-0">
-            <div class="absolute top-10 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float-slow"></div>
-            <div class="absolute bottom-10 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
-        </div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-white">
-                    Ready to <span class="text-accent">Unleash ZapToro AI</span>?
-                </h2>
-                <p class="text-xl text-white/90 max-w-3xl mx-auto mb-8 body-font">
-                    Join 500+ companies already dominating their markets with <span class="highlight-warning">automated lead generation</span>. 
-                    Transform your business today with the power of AI automation.
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8 mb-12">
-                <!-- Stat 1 -->
-                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift">
-                    <div class="text-5xl headline-font text-white mb-4">$50M+</div>
-                    <div class="text-white/80 body-font">Revenue Generated</div>
-                </div>
-                
-                <!-- Stat 2 -->
-                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
-                    <div class="text-5xl headline-font text-white mb-4">150K+</div>
-                    <div class="text-white/80 body-font">Leads Delivered</div>
-                </div>
-                
-                <!-- Stat 3 -->
-                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.4s;">
-                    <div class="text-5xl headline-font text-white mb-4">24/7</div>
-                    <div class="text-white/80 body-font">Automation Working</div>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="#contact" class="bg-white hover:bg-white/90 text-primary px-12 py-6 rounded-xl body-font-bold text-xl transition-all duration-300 transform hover:scale-105 animate-glow relative overflow-hidden">
-                    <span class="relative z-10">
-                        <i class="fas fa-rocket mr-3"></i>
-                        Unleash ZapToro AI Now
-                    </span>
-                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent animate-energy-flow"></div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-dark">
-                        Ready to <span class="gradient-text">10x Your Leads?</span>
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 body-font">
-                        Book your free AI audit and discover exactly how to transform your traffic into qualified leads. 
-                        No fluff, just a clear roadmap to growth.
-                    </p>
-                </div>
-                
-                <div class="bg-white backdrop-blur-xl rounded-2xl p-8 lg:p-12 shadow-2xl border border-gray-100">
-                    <div class="grid lg:grid-cols-2 gap-8 items-start">
-                        <div>
-                            <h3 class="text-2xl headline-font text-gray-800 mb-6">Get Your Free AI Audit</h3>
-                            <p class="text-gray-600 mb-6 body-font">30-minute strategy call where we analyze your current funnel and show you exactly how to transform your traffic into qualified leads.</p>
-                            
-                            <div class="space-y-4 mb-8">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
-                                        <i class="fas fa-check text-success text-sm"></i>
-                                    </div>
-                                    <span class="text-gray-700 body-font">Complete funnel & lead quality audit</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
-                                        <i class="fas fa-check text-success text-sm"></i>
-                                    </div>
-                                    <span class="text-gray-700 body-font">Actionable recommendations you can use today</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
-                                        <i class="fas fa-check text-success text-sm"></i>
                                     </div>
                                     <span class="text-gray-700 body-font">Custom AI automation strategy for your business</span>
                                 </div>
@@ -2277,7 +1192,7 @@
                             </div>
                             
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Company Website</label>
+                                                               <label class="block text-sm body-font-bold text-gray-700 mb-2">Company Website</label>
                                 <input id="website" name="website" type="url" 
                                        class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
                                        placeholder="https://yoursite.com">
@@ -2319,161 +1234,75 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 bg-dark/90 border-t border-lightgray/20">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <div class="mb-2">© <span id="year"></span> ZapToro AI — All rights reserved.</div>
-            <div class="space-x-4">
-                <a href="#home" class="hover:text-primary">Home</a>
-                <a href="#services" class="hover:text-primary">Services</a>
-                <a href="#results" class="hover:text-primary">Results</a>
-                <a href="#contact" class="hover:text-primary">Contact</a>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Add near the bottom (before </body>) to handle video fallback -->
     <script>
-        // Set current year in footer
-        try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e){}
-        
-        // Contact Form Handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('auditForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const formStatus = document.getElementById('formStatus');
-            
-            if (form && submitBtn && formStatus) {
-                form.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const formData = new FormData(form);
-                    const name = formData.get('name');
-                    const email = formData.get('email');
-                    const website = formData.get('website');
-                    const message = formData.get('message');
-                    
-                    // Basic validation
-                    if (!name || !email) {
-                        formStatus.innerHTML = '<div class="text-red-600 bg-red-50 p-3 rounded-lg"><i class="fas fa-exclamation-triangle mr-2"></i>Please fill in all required fields.</div>';
-                        return;
-                    }
-                    
-                    // Email validation
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(email)) {
-                        formStatus.innerHTML = '<div class="text-red-600 bg-red-50 p-3 rounded-lg"><i class="fas fa-exclamation-triangle mr-2"></i>Please enter a valid email address.</div>';
-                        return;
-                    }
-                    
-                    // Update button state
-                    const originalText = submitBtn.innerHTML;
-                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Booking Your Audit...';
-                    submitBtn.disabled = true;
-                    
-                    try {
-                        // Simulate form submission (replace with actual endpoint)
-                        await new Promise(resolve => setTimeout(resolve, 2000));
-                        
-                        // Success message
-                        formStatus.innerHTML = `
-                            <div class="text-green-600 bg-green-50 p-4 rounded-lg text-center">
-                                <i class="fas fa-check-circle mr-2 text-lg"></i>
-                                <div class="font-bold mb-1">Audit Request Submitted!</div>
-                                <div class="text-sm">We'll contact you within 24 hours to schedule your free AI audit. Check your email for confirmation.</div>
-                            </div>
-                        `;
-                        
-                        // Reset form
-                        form.reset();
-                        
-                        // Reset button after delay
-                        setTimeout(() => {
-                            submitBtn.innerHTML = originalText;
-                            submitBtn.disabled = false;
-                        }, 3000);
-                        
-                    } catch (error) {
-                        console.error('Form submission error:', error);
-                        formStatus.innerHTML = '<div class="text-red-600 bg-red-50 p-3 rounded-lg"><i class="fas fa-exclamation-triangle mr-2"></i>Something went wrong. Please try again or email us directly.</div>';
-                        
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.disabled = false;
-                    }
-                });
-            }
-        });
-        
-        // Counter Animation Function
-        function animateCounter(element, target) {
-            const duration = 2000; // 2 seconds
-            const start = 0;
-            const startTime = performance.now();
-            
-            function updateCounter(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                
-                // Easing function for smooth animation
-                const easeOut = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(start + (target - start) * easeOut);
-                
-                // Handle percentage format
-                if (element.textContent.includes('%')) {
-                    element.textContent = current + '%';
-                } else if (target >= 1000) {
-                    // Format large numbers with K notation
-                    if (current >= 1000) {
-                        element.textContent = current; / 1000).toFixed(current >= 10000 ? 0 : 1) + 'K+';
-                    } else {
-                } else {element.textContent = current;
-                    element.textContent = current;
-                } else {
-                    element.textContent = current;
-                if (progress < 1) {
-                    requestAnimationFrame(updateCounter);
-                }f (progress < 1) {
-            }       requestAnimationFrame(updateCounter);
-                }
-            requestAnimationFrame(updateCounter);
-        }   
-            requestAnimationFrame(updateCounter);
-        // Initialize counter animations when elements come into view
-        const counters = document.querySelectorAll('.counter[data-target]');
-        if (counters.length > 0) {ations when elements come into view
-            const counterObserver = new IntersectionObserver((entries) => {;
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {ctionObserver((entries) => {
-                        const target = parseInt(entry.target.getAttribute('data-target'));
-                        animateCounter(entry.target, target);
-                        counterObserver.unobserve(entry.target);Attribute('data-target'));
-                    }   animateCounter(entry.target, target);
-                });     counterObserver.unobserve(entry.target);
-            }, { threshold: 0.5 });
-                });
-            counters.forEach(counter => counterObserver.observe(counter));
-        }   
-            counters.forEach(counter => counterObserver.observe(counter));
-        // Enhanced scroll animations
-        const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
-        if (animatedElements.length > 0) {
-            const scrollObserver = new IntersectionObserver((entries) => {in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {tionObserver((entries) => {
-                        entry.target.style.animationPlayState = 'running';
-                        scrollObserver.unobserve(entry.target);
-                    }   entry.target.style.animationPlayState = 'running';
-                });     scrollObserver.unobserve(entry.target);
-            }, { threshold: 0.1 });
-                });
-            animatedElements.forEach(element => {
-                element.style.animationPlayState = 'paused';
-                scrollObserver.observe(element);{
-            }); element.style.animationPlayState = 'paused';
-        }       scrollObserver.observe(element);
-    </script>);
+(function(){
+  // Hero video -> image fallback (safe, once)
+  var v = document.getElementById('heroVideo');
+  var f = document.getElementById('heroFallback');
+  function fallback(){ try{ if(v && v.parentNode) v.parentNode.removeChild(v); }catch(e){} if(f) f.classList.remove('hidden'); }
+  if (v && f) {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      fallback();
+    } else {
+      v.play().catch(fallback);
+      ['error','stalled','abort','suspend'].forEach(function(ev){ v.addEventListener(ev, fallback, { once:true }); });
+    }
+  }
+})();
+</script>
+
+<!-- Clean unified scripts: footer year, mobile menu, counters, reveal animations -->
+<script>
+(function(){
+  // Footer year
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var btn = document.getElementById('mobileMenuBtn');
+  var menu = document.getElementById('mobileMenu');
+  if (btn && menu) btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+
+  // Counters on view
+  function animateCounter(el, target){
+    var dur = 1800, t0 = performance.now();
+    function step(t){
+      var p = Math.min((t - t0)/dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      var val = Math.floor(target * e);
+      if (el.dataset.format === 'percent' || (el.textContent||'').indexOf('%') !== -1) el.textContent = val + '%';
+      else el.textContent = val.toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('.counter[data-target]');
+  if (counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if (ent.isIntersecting){
+          var t = parseInt(ent.target.getAttribute('data-target')||'0',10);
+          animateCounter(ent.target, t);
+          io.unobserve(ent.target);
         }
-</body>cript>
-</html>
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function(c){ io.observe(c); });
+  }
+
+  // Reveal animations
+  var animated = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
+  if (animated.length){
+    animated.forEach(function(el){ el.style.animationPlayState = 'paused'; });
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if (ent.isIntersecting){ ent.target.style.animationPlayState = 'running'; so.unobserve(ent.target); }
+      });
+    }, { threshold: 0.1 });
+    animated.forEach(function(el){ so.observe(el); });
+  }
+})();
+</script>
 </body>
 </html>
