@@ -591,13 +591,14 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-        <!-- Hero Video Background -->
-        <video autoplay muted loop playsinline
+        <!-- Hero Video Background (UPDATED) -->
+        <video autoplay muted loop playsinline preload="metadata"
             class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
-            poster="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80">
-            <source src="https://videos.pexels.com/video-files/856771/856771-hd_1280_720_25fps.mp4" type="video/mp4">
+            poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80">
+            <source src="https://videos.pexels.com/video-files/2278095/2278095-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/7710243/7710243-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/4098773/4098773-uhd_3840_2160_30fps.mp4" type="video/mp4">
         </video>
-        <!-- Gradient overlay for readability -->
         <div class="absolute inset-0 bg-gradient-to-br from-dark/80 via-primary/30 to-dark/70 z-10"></div>
         <div class="container mx-auto px-6 relative z-20">
             <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
@@ -744,11 +745,13 @@
                     <i class="fas fa-robot text-accent mr-2 animate-bounce-gentle"></i>
                     <span class="text-accent body-font-semibold text-sm">Why Choose <span class="highlight-primary">ZapToro AI</span>?</span>
                 </div>
+                <!-- REPLACED HEADLINE -->
                 <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    The Smartest Way to <span class="gradient-text">Grow Your Business</span>
+                    The Edge You’ve Been Chasing.<br>
+                    <span class="gradient-text">Intelligence Unleashed</span>
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
-                    ZapToro AI isn't just another tool — it's a complete system designed to maximize your lead generation and sales potential. Here's why we're different:
+                    ZapToro AI isn't just another tool — it's a complete system designed to maximize your lead generation and sales potential.
                 </p>
             </div>
 
@@ -801,92 +804,6 @@
     </section>
 
     <!-- Speed Advantage Section -->
-    <!-- Multimedia Technology Showcase -->
-    <section id="multimedia-showcase" class="py-20 bg-gradient-to-br from-dark via-primary/5 to-dark relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <div class="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6 max-w-2xl mx-auto">
-                    <p class="text-red-300 font-bold">🔧 MULTIMEDIA SHOWCASE - Images & Videos Below</p>
-                    <p class="text-red-200 text-sm">If external images don't load, you'll see animated icons instead</p>
-                </div>
-                <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-white">
-                    🎬 <span class="gradient-text">Multimedia Experience</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                    Explore our technology through interactive visuals, videos, and live demonstrations
-                </p>
-                
-                <!-- Main Hero Video Showcase -->
-                <div class="max-w-4xl mx-auto mb-12">
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/50">
-                        <div class="w-full h-80 bg-gradient-to-br from-primary/20 via-accent/30 to-primary/20 flex items-center justify-center" style="background-image: radial-gradient(circle at 30% 20%, rgba(0, 212, 255, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(124, 58, 237, 0.3) 0%, transparent 50%);">
-                            <div class="text-center text-white">
-                                <i class="fas fa-chart-area text-6xl mb-4 text-primary animate-pulse"></i>
-                                <h3 class="text-2xl font-bold mb-2">ZapToro AI Dashboard</h3>
-                                <p class="text-gray-300">Live Analytics & Lead Management</p>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/70 to-dark/30"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-24 h-24 bg-primary/90 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse shadow-xl">
-                                    <i class="fas fa-play text-4xl text-white ml-1"></i>
-                                </div>
-                                <p class="text-white text-2xl font-bold mb-2">▶️ Watch ZapToro AI in Action</p>
-                                <p class="text-gray-200 text-lg">Interactive Demo • 2 min overview</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image Gallery Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-primary/30">
-                        <img 
-                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" 
-                            alt="AI Neural Networks"
-                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                            loading="eager"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                        <div class="absolute bottom-3 left-3">
-                            <h4 class="text-white font-bold">🧠 AI Neural Networks</h4>
-                            <p class="text-gray-200 text-sm">Advanced machine learning</p>
-                        </div>
-                    </div>
-                    
-                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-accent/30">
-                        <img 
-                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
-                            alt="Analytics Dashboard"
-                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                            loading="eager"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                        <div class="absolute bottom-3 left-3">
-                            <h4 class="text-white font-bold">📊 Live Analytics</h4>
-                            <p class="text-gray-200 text-sm">Real-time insights</p>
-                        </div>
-                    </div>
-                    
-                    <div class="relative overflow-hidden rounded-xl shadow-lg border border-primary/30">
-                        <img 
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop" 
-                            alt="Automation Technology"
-                            class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
-                            loading="eager"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                        <div class="absolute bottom-3 left-3">
-                            <h4 class="text-white font-bold">⚡ Smart Automation</h4>
-                            <p class="text-gray-200 text-sm">Intelligent workflows</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="speed-advantage" class="py-20 bg-darkgray/30 relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16 animate-fade-in-up">
@@ -894,8 +811,10 @@
                     <i class="fas fa-bolt text-primary mr-2 animate-pulse"></i>
                     <span class="text-primary body-font-semibold text-sm">Lightning <span class="highlight-accent">Speed</span> Advantage</span>
                 </div>
+                <!-- REPLACED HEADLINE -->
                 <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Speed Beats Everything. <span class="gradient-text">Automation Wins.</span>
+                    Outpace. Outperform. Outlast.<br>
+                    <span class="gradient-text">Lightning in Your Funnel</span>
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up body-font" style="animation-delay: 0.3s;">
                     While your competitors manually chase prospects, <span class="highlight-primary">ZapToro's automation</span> processes thousands per hour with <span class="highlight-accent">instant delivery</span> and <span class="highlight-success">zero manual work</span>.
@@ -1019,140 +938,223 @@
     <!-- Social Proof & Results -->
     <section id="social-proof" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-dark to-accent/5"></div>
-        
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16 animate-fade-in-up">
                 <div class="inline-flex items-center bg-success/20 border border-success/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
                     <i class="fas fa-trophy text-success mr-2 animate-bounce-gentle"></i>
                     <span class="text-success body-font-semibold text-sm">Numbers Don't <span class="highlight-warning">Lie</span></span>
                 </div>
+                <!-- REPLACED HEADLINE -->
                 <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
-                    Join 500+ Companies Already <span class="gradient-text">Winning</span>
+                    Real Wins, Real Fast.<br>
+                    <span class="gradient-text">Transformation Stories</span>
                 </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up body-font" style="animation-delay: 0.3s;">
+                    See how ZapToro AI has <span class="highlight-primary">transformed</span> businesses across industries with <span class="highlight-success">measurable</span>, <span class="highlight-accent">game-changing</span> results.
+                </p>
             </div>
 
-            <!-- Automation Stats -->
-            <div class="grid md:grid-cols-4 gap-8 mb-16">
-                <div class="text-center bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
-                    <div class="text-6xl headline-font text-success mb-4">$50M+</div>
-                    <div class="text-xl body-font-bold text-white mb-2"><span class="highlight-success">Automated</span> Revenue</div>
-                    <div class="text-gray-400 body-font">Generated by our system</div>
+            <!-- Case Studies with Enhanced Media -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Case Study 1 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.1s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop&crop=center" 
+                            alt="E-commerce business dashboard showing 400% revenue increase through AI-powered lead generation" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
+                            +400%
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">E-commerce</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-primary transition-colors">400% Revenue Increase</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        Fashion retailer increased <span class="highlight-success">online sales</span> by <span class="highlight-primary">400%</span> in 6 months using our AI <span class="highlight-accent">lead scoring</span> and personalization.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce counter" data-target="65" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Conversion</span> Rate</div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
                 </div>
-                <div class="text-center bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
-                    <div class="text-6xl headline-font text-accent mb-4">150K+</div>
-                    <div class="text-xl body-font-bold text-white mb-2">Leads <span class="highlight-accent">Delivered</span></div>
-                    <div class="text-gray-400 body-font">Through automation</div>
-                </div>
-                <div class="text-center bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
-                    <div class="text-6xl headline-font text-primary mb-4 counter" data-target="87">0%</div>
-                    <div class="text-xl body-font-bold text-white mb-2">Average <span class="highlight-primary">Conversion</span></div>
-                    <div class="text-gray-400 body-font">Rate improvement</div>
-                </div>
-                <div class="text-center bg-lightgray/20 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.4s;">
-                    <div class="text-6xl headline-font text-warning mb-4">25+</div>
-                    <div class="text-xl body-font-bold text-white mb-2">Industries <span class="highlight-warning">Dominated</span></div>
-                    <div class="text-gray-400 body-font">By our automation</div>
-                </div>
-            </div>
 
-            <!-- Social Proof Logos -->
-            <div class="text-center mb-8">
-                <p class="text-gray-300 body-font mb-8">Trusted by industry leaders</p>
-                <div class="flex flex-wrap justify-center items-center gap-8 opacity-50">
-                    <div class="text-2xl body-font-bold text-gray-400">TechCorp</div>
-                    <div class="text-2xl body-font-bold text-gray-400">GrowthCo</div>
-                    <div class="text-2xl body-font-bold text-gray-400">ScaleUp Inc</div>
-                    <div class="text-2xl body-font-bold text-gray-400">InnovateLtd</div>
-                    <div class="text-2xl body-font-bold text-gray-400">FutureBase</div>
+                <!-- Case Study 2 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.3s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=200&fit=crop&crop=center" 
+                            alt="SaaS company team celebrating 10x lead generation growth with AI technology" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-accent/90 text-white px-3 py-1 rounded-full text-sm body-font-bold animate-pulse">
+                            10x
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">SaaS</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-accent transition-colors">10x Lead Generation</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        B2B SaaS company generated <span class="highlight-accent">10x more</span> qualified leads with our AI <span class="highlight-primary">chatbot</span> and <span class="highlight-success">targeting system</span>.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="1000">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-success">Increase</span></div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="85" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-lightgray/30 backdrop-blur-xl border border-lightgray/20 rounded-2xl p-8 animate-fade-in-up hover-lift group overflow-hidden" style="animation-delay: 0.5s;">
+                    <div class="relative overflow-hidden rounded-xl mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=200&fit=crop&crop=center" 
+                            alt="Healthcare provider using AI to reduce cost per lead by 70% while improving patient acquisition" 
+                            class="w-full h-48 object-cover animate-kenburns-top"
+                            loading="lazy"
+                        />
+                    <div class="text-gray-400 body-font">Never stops <span class="highlight-primary">optimizing</span></div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-success/20 text-success px-3 py-1 rounded-full text-sm body-font-semibold animate-fade-in-left">Healthcare</span>
+                    </div>
+                    <h3 class="text-2xl body-font-bold text-white mb-4 group-hover:text-success transition-colors">-70% Cost Per Lead</h3>
+                    <p class="text-gray-300 mb-6 body-font">
+                        Healthcare provider reduced <span class="highlight-success">cost per lead by 70%</span> and improved patient acquisition using our AI <span class="highlight-primary">predictive analytics</span> and <span class="highlight-accent">automation</span>.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-success mb-2 animate-scale-in-bounce" data-target="500">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Cost <span class="highlight-success">Reduction</span></div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl headline-font text-accent mb-2 animate-scale-in-bounce" data-target="90" style="animation-delay: 0.2s;">0%</div>
+                            <div class="text-sm text-gray-400 body-font">Lead <span class="highlight-accent">Quality</span></div>
+                        </div>
+                    </div>
+                    <button class="text-primary hover:text-primary/80 body-font-semibold transition-colors group-hover:animate-wiggle">
+                        Read Full Case Study <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Floating AI Assistant Widget -->
-    <div id="aiWidget" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-primary shadow-2xl z-60 flex items-center justify-center cursor-pointer" title="AI Assistant">
-        <i id="aiIcon" class="fas fa-robot text-white text-xl"></i>
-    </div>
+    <!-- Footer CTA Section -->
+    <section id="footer-cta" class="py-20 bg-gradient-to-br from-primary/90 to-accent/90 relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float-slow"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <!-- REPLACED HEADLINE -->
+                <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-white">
+                    Ready to Run With the Bulls?<br>
+                    <span class="text-accent">Unleash ZapToro AI</span>
+                </h2>
+                <p class="text-xl text-white/90 max-w-3xl mx-auto mb-8 body-font">
+                    Join 500+ companies already dominating their markets with <span class="highlight-warning">automated lead generation</span>. 
+                    Transform your business today with the power of AI automation.
+                </p>
+            </div>
 
-    <script>
-        // Simple client-side booking form handler
-        (function(){
-            const form = document.getElementById('auditForm');
-            const status = document.getElementById('formStatus');
-            const submitBtn = document.getElementById('submitBtn');
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- Stat 1 -->
+                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift">
+                    <div class="text-5xl headline-font text-white mb-4">$50M+</div>
+                    <div class="text-white/80 body-font">Revenue Generated</div>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
+                    <div class="text-5xl headline-font text-white mb-4">150K+</div>
+                    <div class="text-white/80 body-font">Leads Delivered</div>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="text-center bg-white/10 backdrop-blur-xl rounded-2xl p-8 animate-fade-in-up hover-lift" style="animation-delay: 0.4s;">
+                    <div class="text-5xl headline-font text-white mb-4">24/7</div>
+                    <div class="text-white/80 body-font">Automation Working</div>
+                </div>
+            </div>
 
-            function showStatus(msg, ok){
-                status.textContent = msg;
-                status.style.color = ok ? '#00ff88' : '#ff6b35';
-            }
+            <div class="text-center">
+                <a href="#contact" class="bg-white hover:bg-white/90 text-primary px-12 py-6 rounded-xl body-font-bold text-xl transition-all duration-300 transform hover:scale-105 animate-glow relative overflow-hidden">
+                    <span class="relative z-10">
+                        <i class="fas fa-rocket mr-3"></i>
+                        Unleash ZapToro AI Now
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent animate-energy-flow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            form.addEventListener('submit', function(e){
-                e.preventDefault();
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const website = document.getElementById('website').value.trim();
-                const message = document.getElementById('message').value.trim();
-
-                if(!name || !email){
-                    showStatus('Please provide name and email.', false);
-                    return;
-                }
-
-                // Basic email pattern check
-                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if(!emailRe.test(email)){
-                    showStatus('Please provide a valid email address.', false);
-                    return;
-                }
-
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-
-                // POST to backend endpoint that accepts audit bookings.
-                fetch('/api/book-audit', {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({name, email, website, message})
-                }).then(async res => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Book Audit';
-                    if(!res.ok){
-                        const txt = await res.text().catch(()=>null);
-                        showStatus('Server error: ' + (txt || res.statusText), false);
-                        return;
-                    }
-                    const json = await res.json().catch(()=>null);
-                    form.reset();
-                    if(json && json.ok){
-                        const msg = json.emailed ? 'Thanks — we received your request and emailed a scheduling link.' : 'Thanks — we received your request. We will email you to schedule.';
-                        showStatus(msg, true);
-                    } else {
-                        showStatus('Thanks — your request was received.', true);
-                    }
-                }).catch(err => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Book Audit';
-                    console.error('Booking error', err);
-                    showStatus('Network error — could not send request. Try again later.', false);
-                });
-            });
-        })();
-
-        // AI Assistant widget - lightweight local implementation
-        (function(){
-            const aiWidget = document.getElementById('aiWidget');
-            const aiPanel = document.getElementById('aiPanel');
-            const closeAi = document.getElementById('closeAi');
-            const aiForm = document.getElementById('aiForm');
-            const aiInput = document.getElementById('aiInput');
-            const aiMessages = document.getElementById('aiMessages');
-
-            const canned = [
-                {k: /book|audit|strategy/i, a: "I can help you book a free 30-minute AI audit. Would you like to provide your name and email?"},
-                {k: /price|pricing|cost/i, a: "Our pricing depends on volume and scope — typical engagements start at $3k/mo. For an exact quote, book an audit and we'll prepare a custom proposal."},
-                {k: /lead|leads/i, a: "We focus on AI lead scoring, chatbots, and smart targeting. Tell me your industry and current traffic and I can give quick tips."},
-                {k: /hello|hi|hey/i, a: "Hey! I'm ZapToro Assistant — ask me about audits, pricing, or say 'book a call'."}
-            ];
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <!-- REPLACED HEADLINE -->
+                    <h2 class="text-4xl lg:text-6xl headline-font mb-6 text-dark">
+                        Ignite Your Lead Machine.<br>
+                        <span class="gradient-text">Book Your AI Audit</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 body-font">
+                        Book your free AI audit and discover exactly how to transform your traffic into qualified leads. 
+                        No fluff, just a clear roadmap to growth.
+                    </p>
+                </div>
+                
+                <div class="bg-white backdrop-blur-xl rounded-2xl p-8 lg:p-12 shadow-2xl border border-gray-100">
+                    <div class="grid lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <h3 class="text-2xl headline-font text-gray-800 mb-6">Get Your Free AI Audit</h3>
+                            <p class="text-gray-600 mb-6 body-font">30-minute strategy call where we analyze your current funnel and show you exactly how to transform your traffic into qualified leads.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-check text-success text-sm"></i>
+                                    </div>
+                                    <span class="text-gray-700 body-font">Complete funnel & lead quality audit</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-check text-success text-sm"></i>
+                                    </div>
+                                    <span class="text-gray-700 body-font">Actionable recommendations you can use today</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-check text-success text-sm"></i>
 
             function pushMessage(text, from='bot'){
                 const wrap = document.createElement('div');
@@ -2040,7 +2042,7 @@
             <div class="text-center mb-16 animate-fade-in-up">
                 <div class="inline-flex items-center bg-success/20 border border-success/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
                     <i class="fas fa-trophy text-success mr-2 animate-bounce-gentle"></i>
-                    <span class="text-success body-font-semibold text-sm"><span class="highlight-warning">Proven</span> Results</span>
+                    <span class="text-success body-font-semibold text-sm">Numbers Don't <span class="highlight-warning">Lie</span></span>
                 </div>
                 <h2 class="text-4xl lg:text-6xl headline-font mb-6 animate-tracking-in">
                     Real Results from <span class="gradient-text">Real Clients</span>
@@ -2422,56 +2424,56 @@
                 } else if (target >= 1000) {
                     // Format large numbers with K notation
                     if (current >= 1000) {
-                        element.textContent = (current / 1000).toFixed(current >= 10000 ? 0 : 1) + 'K+';
+                        element.textContent = current; / 1000).toFixed(current >= 10000 ? 0 : 1) + 'K+';
                     } else {
-                        element.textContent = current;
-                    }
+                } else {element.textContent = current;
+                    element.textContent = current;
                 } else {
                     element.textContent = current;
-                }
-                
                 if (progress < 1) {
                     requestAnimationFrame(updateCounter);
+                }f (progress < 1) {
+            }       requestAnimationFrame(updateCounter);
                 }
-            }
-            
             requestAnimationFrame(updateCounter);
-        }
-        
+        }   
+            requestAnimationFrame(updateCounter);
         // Initialize counter animations when elements come into view
         const counters = document.querySelectorAll('.counter[data-target]');
-        if (counters.length > 0) {
-            const counterObserver = new IntersectionObserver((entries) => {
+        if (counters.length > 0) {ations when elements come into view
+            const counterObserver = new IntersectionObserver((entries) => {;
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
+                    if (entry.isIntersecting) {ctionObserver((entries) => {
                         const target = parseInt(entry.target.getAttribute('data-target'));
                         animateCounter(entry.target, target);
-                        counterObserver.unobserve(entry.target);
-                    }
-                });
+                        counterObserver.unobserve(entry.target);Attribute('data-target'));
+                    }   animateCounter(entry.target, target);
+                });     counterObserver.unobserve(entry.target);
             }, { threshold: 0.5 });
-            
+                });
             counters.forEach(counter => counterObserver.observe(counter));
-        }
-        
+        }   
+            counters.forEach(counter => counterObserver.observe(counter));
         // Enhanced scroll animations
         const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
         if (animatedElements.length > 0) {
-            const scrollObserver = new IntersectionObserver((entries) => {
+            const scrollObserver = new IntersectionObserver((entries) => {in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
+                    if (entry.isIntersecting) {tionObserver((entries) => {
                         entry.target.style.animationPlayState = 'running';
                         scrollObserver.unobserve(entry.target);
-                    }
-                });
+                    }   entry.target.style.animationPlayState = 'running';
+                });     scrollObserver.unobserve(entry.target);
             }, { threshold: 0.1 });
-            
+                });
             animatedElements.forEach(element => {
                 element.style.animationPlayState = 'paused';
-                scrollObserver.observe(element);
-            });
+                scrollObserver.observe(element);{
+            }); element.style.animationPlayState = 'paused';
+        }       scrollObserver.observe(element);
+    </script>);
         }
-    </script>
-
+</body>cript>
+</html>
 </body>
 </html>
