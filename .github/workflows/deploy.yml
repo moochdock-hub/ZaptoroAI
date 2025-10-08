@@ -15,9 +15,11 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.hostinger_host }}
-          username: u291229706.maestrodom
+          # Username is now read from a secret for safety. Add a repository secret named HOSTINGER_USER
+          username: ${{ secrets.HOSTINGER_USER }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
-          server-dir: /public_html/
+          # Deploy path for your Hostinger account
+          server-dir: /home/u291229706/domains/zaptoroai.com/public_html
           protocol: ftp
           port: 21
           timeout: 60000
