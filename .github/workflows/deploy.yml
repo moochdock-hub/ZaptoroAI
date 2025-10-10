@@ -28,3 +28,8 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/.vscode/**
+      - name: Verify uploaded files (list remote dir)
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+          echo "Listing remote deploy directory to verify uploaded files:"
+          lftp -u "${{ secrets.HOSTINGER_USER }},${{ secrets.HOSTINGER_PASSWORD }}" "${{ secrets.hostinger_host }}" -e "set ftp:ssl-allow no; cd /home/u291229706/domains/zaptoroai.com/public_html/; cls -la; bye"
