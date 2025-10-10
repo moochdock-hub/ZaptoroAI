@@ -11,25 +11,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: FTP Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.hostinger_host }}
-          # Username is now read from a secret for safety. Add a repository secret named HOSTINGER_USER
-          username: ${{ secrets.HOSTINGER_USER }}
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
-          # Deploy path for your Hostinger account
-          server-dir: /home/u291229706/domains/zaptoroai.com/public_html/
-          protocol: ftp
-          port: 21
-          timeout: 60000
-          exclude: |
-            **/.git*
-            **/.github/**
-            **/node_modules/**
-            **/.vscode/**
-      - name: Verify uploaded files (list remote dir)
+      - name: Deploy to Hostinger via SFTP (key auth)
         run: |
-          sudo apt-get update && sudo apt-get install -y lftp
-          echo "Listing remote deploy directory to verify uploaded files:"
-          lftp -u "${{ secrets.HOSTINGER_USER }},${{ secrets.HOSTINGER_PASSWORD }}" "${{ secrets.hostinger_host }}" -e "set ftp:ssl-allow no; cd /home/u291229706/domains/zaptoroai.com/public_html/; cls -la; bye"
+          sudo apt-get update && sudo apt-get install -y lftp openssh-client
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          # Add host to known_hosts to avoid prompt (use provided host and port if set)
+          ssh-keyscan -p ${{ secrets.HOSTINGER_PORT }} ${{ secrets.hostinger_host }} >> ~/.ssh/known_hosts || true
+          # Mirror the repo to the remote public_html using lftp in sftp mode and the SSH key
+          lftp -u ${{ secrets.HOSTINGER_USER }}, -e "set sftp:connect-program 'ssh -a -x -i ~/.ssh/id_rsa -p ${{ secrets.HOSTINGER_PORT }}'; mirror -R --parallel=2 --reverse --delete --verbose . /home/u291229706/domains/zaptoroai.com/public_html/; bye" sftp://${{ secrets.hostinger_host }}
+
+      - name: Verify deployed file checksum
+        run: |
+          echo "Downloading deployed HTML and computing sha256..."
+          sudo apt-get install -y curl coreutils
+          curl -sS https://zaptoroai.com/ZAPTOROAI.html -o /tmp/deployed.html || true
+          sha_deployed=$(sha256sum /tmp/deployed.html 2>/dev/null | awk '{print $1}' || echo "")
+          sha_local=$(sha256sum ZAPTOROAI.html | awk '{print $1}')
+          echo "deployed: $sha_deployed"
+          echo "local:    $sha_local"
+          if [ "$sha_deployed" = "$sha_local" ]; then echo "CHECKSUM MATCH: deployed file matches repo"; else echo "CHECKSUM MISMATCH: deployed file does NOT match repo"; exit 1; fi
