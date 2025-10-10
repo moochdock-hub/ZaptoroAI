@@ -18,8 +18,27 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y lftp openssh-client
           mkdir -p ~/.ssh
-          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
+          # Write the private key reliably and normalize line endings (handles Windows CRLF in secret)
+          printf '%s\n' "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
+          # Remove any CRLF that might have been introduced when copying the key into GitHub Secrets
+          sed -i 's/\r$//' ~/.ssh/id_rsa || true
           chmod 600 ~/.ssh/id_rsa
+          # Quick validation: ensure the secret contains a private key and is usable
+          if ! grep -q "PRIVATE KEY" ~/.ssh/id_rsa; then
+            echo "ERROR: the provided HOSTINGER_SSH_KEY does not look like a private key (missing 'PRIVATE KEY' header)."
+            echo "Possible causes: you pasted the public key instead of the private key, or the secret was truncated."
+            echo "Please set the repository secret 'HOSTINGER_SSH_KEY' to the full private key PEM/OPENSSH block."
+            exit 1
+          fi
+          # Try to derive the public key from the private key (fails if key is passphrase-protected or malformed)
+          if ! ssh-keygen -y -f ~/.ssh/id_rsa > /tmp/id_rsa.pub 2>/dev/null; then
+            echo "ERROR: unable to extract public key from the provided private key. The key may be encrypted with a passphrase or malformed."
+            echo "GitHub Actions cannot provide an interactive passphrase. Create a new key without a passphrase for CI or upload an unencrypted private key."
+            exit 1
+          fi
+          # Print a short fingerprint to help you confirm the correct key is uploaded to Hostinger (no private key contents shown)
+          echo "Derived public key fingerprint (compare this with Hostinger):"
+          ssh-keygen -lf /tmp/id_rsa.pub || true
           # Parse host and optional port robustly (accepts host, host:port, sftp://host, user@host, etc.)
           RAW_HOST="${{ secrets.hostinger_host }}"
           echo "Raw host (masked): $RAW_HOST"
