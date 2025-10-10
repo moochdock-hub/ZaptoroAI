@@ -12,15 +12,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Deploy to Hostinger via SFTP (key auth)
+        env:
+          PORT: ${{ secrets.HOSTINGER_PORT || '65002' }}
         run: |
           sudo apt-get update && sudo apt-get install -y lftp openssh-client
           mkdir -p ~/.ssh
           echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          # Add host to known_hosts to avoid prompt (use provided host and port if set)
-          ssh-keyscan -p ${{ secrets.HOSTINGER_PORT }} ${{ secrets.hostinger_host }} >> ~/.ssh/known_hosts || true
+          echo "Using SFTP port: $PORT"
+          # Add host to known_hosts to avoid prompt
+          ssh-keyscan -p "$PORT" ${{ secrets.hostinger_host }} >> ~/.ssh/known_hosts || true
           # Mirror the repo to the remote public_html using lftp in sftp mode and the SSH key
-          lftp -u ${{ secrets.HOSTINGER_USER }}, -e "set sftp:connect-program 'ssh -a -x -i ~/.ssh/id_rsa -p ${{ secrets.HOSTINGER_PORT }}'; mirror -R --parallel=2 --reverse --delete --verbose . /home/u291229706/domains/zaptoroai.com/public_html/; bye" sftp://${{ secrets.hostinger_host }}
+          lftp -u ${{ secrets.HOSTINGER_USER }}, -e "set sftp:connect-program 'ssh -a -x -i ~/.ssh/id_rsa -p $PORT'; mirror -R --parallel=2 --reverse --delete --verbose . /home/u291229706/domains/zaptoroai.com/public_html/; bye" sftp://${{ secrets.hostinger_host }}
 
       - name: Verify deployed file checksum
         run: |
