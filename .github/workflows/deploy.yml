@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           protocol: ftps
           port: ${{ secrets.HOSTINGER_FTPS_PORT || '21' }}
-          local-dir: .
+          local-dir: ./
           server-dir: /home/u291229706/domains/zaptoroai.com/public_html/
           exclude: |
             **/.git*
