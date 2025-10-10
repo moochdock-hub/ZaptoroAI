@@ -14,24 +14,40 @@ jobs:
       - name: Deploy to Hostinger via SFTP (key auth)
         env:
           DEFAULT_PORT: '65002'
+          HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
         run: |
           sudo apt-get update && sudo apt-get install -y lftp openssh-client
           mkdir -p ~/.ssh
           echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          # Parse host and optional port if the secret was entered as host:port
+          # Parse host and optional port robustly (accepts host, host:port, sftp://host, user@host, etc.)
           RAW_HOST="${{ secrets.hostinger_host }}"
-          HOST="$RAW_HOST"
+          echo "Raw host (masked): $RAW_HOST"
+          # Trim whitespace
+          HOST=$(echo "$RAW_HOST" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          # Remove URI scheme like sftp:// or ssh://
+          HOST=$(echo "$HOST" | sed -E 's#^[a-zA-Z][a-zA-Z0-9+.-]*://##')
+          # Remove username@ if present
+          HOST=$(echo "$HOST" | awk -F'@' '{print $NF}')
+          # Remove any path or trailing slash
+          HOST=$(echo "$HOST" | cut -d'/' -f1)
+          # default port
           PORT="$DEFAULT_PORT"
-          if echo "$RAW_HOST" | grep -q ":"; then
-            HOST="$(echo "$RAW_HOST" | cut -d: -f1)"
-            maybe_port="$(echo "$RAW_HOST" | cut -d: -f2-)"
-            # only use numeric port if it's all digits
-            if echo "$maybe_port" | grep -Eq '^[0-9]+$'; then
-              PORT="$maybe_port"
-            fi
-          elif [ -n "${{ secrets.HOSTINGER_PORT }}" ]; then
-            PORT="${{ secrets.HOSTINGER_PORT }}"
+          # If host contains colon it's host:port (IPv6 with [] is supported by later parsing)
+          if echo "$HOST" | grep -qE '^[^:]+:[0-9]+$'; then
+            # simple host:port
+            PORT="$(echo "$HOST" | cut -d: -f2-)"
+            HOST="$(echo "$HOST" | cut -d: -f1)"
+          elif [ -n "$HOSTINGER_PORT" ]; then
+            PORT="$HOSTINGER_PORT"
+          fi
+          # Final trim
+          HOST=$(echo "$HOST" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          # Validate host looks like an IP or hostname (basic check)
+          if ! echo "$HOST" | grep -Eq '^([0-9]{1,3}\.){3}[0-9]{1,3}$|^[a-zA-Z0-9.-]+$|^\[[0-9a-fA-F:]+\]$'; then
+            echo "Parsed host contains invalid characters: '$HOST'"
+            echo "Please set the repository secret 'hostinger_host' to just the hostname or IP (optionally as host:port). Current raw (masked) value: $RAW_HOST"
+            exit 1
           fi
           echo "Using SFTP host: $HOST and port: $PORT"
           # Add host to known_hosts to avoid prompt (use -p only when port is numeric)
