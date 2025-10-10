@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Deploy to Hostinger via SFTP (key auth)
         env:
-          DEFAULT_PORT: '65002'
+          DEFAULT_PORT: '22'
           HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
         run: |
           sudo apt-get update && sudo apt-get install -y lftp openssh-client
