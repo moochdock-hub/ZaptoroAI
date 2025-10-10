@@ -607,19 +607,16 @@
     <!-- Hero Section (updated) -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
       <!-- New video background + fallback image -->
-      <video id="heroVideo" autoplay muted loop playsinline preload="metadata"
-             class="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
-             poster="assets/hero-precision.jpg">
-        <source src="https://videos.pexels.com/video-files/6074396/6074396-uhd_4096_2160_24fps.mp4" type="video/mp4">
-        <source src="https://videos.pexels.com/video-files/5728405/5728405-uhd_3840_2160_30fps.mp4" type="video/mp4">
-      </video>
+            <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover parallax-video z-0 opacity-40" autoplay muted loop playsinline preload="metadata" poster="assets/hero-precision.jpg" aria-hidden="true">
+                <!-- Local primary + fallback clips (ensure these files are added to assets/) -->
+                <source src="assets/hero-clip-1.mp4" type="video/mp4">
+                <source src="assets/hero-clip-2.mp4" type="video/mp4">
+                <!-- If video cannot play, poster image will be displayed -->
+            </video>
 
-      <!-- Image fallback (use your provided photo saved as assets/hero-precision.jpg) -->
-      <div id="heroFallback" class="absolute inset-0 hidden z-0">
-        <img src="assets/hero-precision.jpg"
-             alt="ZapToro AI — precision lead targeting, instant conversion"
-             class="w-full h-full object-cover opacity-40 select-none pointer-events-none" />
-      </div>
+            <!-- Image fallback (use your provided photo saved as assets/hero-precision.jpg) -->
+            <div id="heroFallback" class="absolute inset-0 hidden z-0 bg-center bg-cover" style="background-image:url('assets/hero-precision.jpg')" role="img" aria-label="ZapToro AI background: precision lead targeting">
+            </div>
 
       <!-- Readability overlay -->
       <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary/30 to-black/70 z-10"></div>
@@ -686,7 +683,29 @@
                       </button>
                   </div>
                   
-                  <!-- Automated Stats -->
+                                    <!-- Story / narrative added by user -->
+                                    <div class="mt-8 mb-8 bg-white/5 border border-white/5 rounded-2xl p-6 animate-fade-in-up">
+                                        <h3 class="text-2xl headline-font text-white mb-4">THE AI THAT NEVER SLEEPS, NEVER LOSES, NEVER STOPS CLOSING.</h3>
+                                        <p class="text-gray-300 mb-3">11:47 PM. Lead calls. You're human. They hired someone faster by sunrise.</p>
+                                        <p class="text-gray-300 mb-3"><strong>What if you were faster than fast?</strong></p>
+                                        <p class="text-gray-300 mb-4">ZapToro AI responds in 60 seconds. Books while you sleep. Closes while you live. 24/7/365.</p>
+                                        <div class="flex items-center justify-between mb-4">
+                                            <a class="bg-accent text-dark px-4 py-2 rounded-lg body-font-bold" href="#contact">UNLOCK 50% OFF FOREVER</a>
+                                            <div class="text-xs text-gray-400">17 Founding Partner spots remaining</div>
+                                        </div>
+
+                                        <h4 class="text-xl headline-font text-white mt-4 mb-2">THE BLEEDING</h4>
+                                        <p class="text-gray-300 mb-3"><strong>EVERY HOUR YOU WAIT COSTS $500.</strong></p>
+                                        <p class="text-gray-300 mb-3">7:15 PM Tuesday: Sarah's furnace died. Kids are cold. She calls. You're at dinner. Voicemail. 7:47 PM: Sarah books your competitor's AI receptionist. 9:00 AM Wednesday: You call back. "Someone's already coming." Lost: $847 job.</p>
+                                        <p class="text-gray-300 mb-3">This happens 12-15 times monthly. The texts you answer "later." The forms you check "tomorrow." Each delay is silent revenue assassination. You're not losing to better competitors. You're losing to faster ones.</p>
+
+                                        <h4 class="text-xl headline-font text-white mt-4 mb-2">THE TRANSFORMATION</h4>
+                                        <p class="text-gray-300 mb-3">WAKE UP TO A CALENDAR THAT FILLED ITSELF.</p>
+                                        <p class="text-gray-300 mb-3">2:34 AM: Google ad lead hits. 2:34 AM: ZapToro texts back, assesses problem, checks calendar. 2:37 AM: Thursday 10 AM appointment booked. Confirmation sent. 8:00 AM: You wake to revenue.</p>
+                                        <p class="text-gray-300 mb-3">5:43 PM: Call during traffic. Ring 1: ZapToro answers as your office. 2 minutes: Qualified lead, budget confirmed, CRM updated. Saturday 11 PM: Competitor slides into your customer's DMs. 11:04 PM: ZapToro responds, reinforces relationship, requests review.</p>
+                                    </div>
+
+                                    <!-- Automated Stats -->
                   <div class="grid grid-cols-3 gap-6 animate-fade-in-up delay-09">
                       <div class="text-center hover-lift">
                           <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
@@ -735,6 +754,22 @@
                               </div>
                           </div>
                       </div>
+              
+                      <!-- Founding Partner / Offer CTA -->
+                      <div class="col-span-2 mt-12">
+                          <div class="bg-gradient-to-r from-accent/10 to-primary/10 border border-white/5 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                              <div>
+                                  <h3 class="text-2xl headline-font text-white mb-2">FOUNDING PARTNER: LIMITED SPOTS</h3>
+                                  <p class="text-gray-300 mb-1">Be among the first 17 businesses to join ZapToro AI at a deeply discounted rate and own the speed advantage.</p>
+                                  <p class="text-gray-400 text-sm">Includes onboarding, priority lead routing, and a custom automation blueprint.</p>
+                              </div>
+                              <div class="flex items-center space-x-4">
+                                  <a href="#contact" class="bg-accent text-dark px-6 py-3 rounded-lg body-font-bold">Apply for Founding Partner</a>
+                                  <a href="#" class="text-sm text-gray-400">Learn more</a>
+                              </div>
+                          </div>
+                      </div>
+
                       
                       <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift delay-1">
                           <div class="flex items-center space-x-3">
@@ -1250,75 +1285,7 @@
         </div>
     </section>
 
-    <!-- Add near the bottom (before </body>) to handle video fallback -->
-    <script>
-(function(){
-  // Hero video -> image fallback (safe, once)
-  var v = document.getElementById('heroVideo');
-  var f = document.getElementById('heroFallback');
-  function fallback(){ try{ if(v && v.parentNode) v.parentNode.removeChild(v); }catch(e){} if(f) f.classList.remove('hidden'); }
-  if (v && f) {
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      fallback();
-    } else {
-      v.play().catch(fallback);
-      ['error','stalled','abort','suspend'].forEach(function(ev){ v.addEventListener(ev, fallback, { once:true }); });
-    }
-  }
-})();
-</script>
-
-<!-- Clean unified scripts: footer year, mobile menu, counters, reveal animations -->
-<script>
-(function(){
-  // Footer year
-  var y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
-
-  // Mobile menu
-  var btn = document.getElementById('mobileMenuBtn');
-  var menu = document.getElementById('mobileMenu');
-  if (btn && menu) btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
-
-  // Counters on view
-  function animateCounter(el, target){
-    var dur = 1800, t0 = performance.now();
-    function step(t){
-      var p = Math.min((t - t0)/dur, 1);
-      var e = 1 - Math.pow(1 - p, 3);
-      var val = Math.floor(target * e);
-      if (el.dataset.format === 'percent' || (el.textContent||'').indexOf('%') !== -1) el.textContent = val + '%';
-      else el.textContent = val.toLocaleString();
-      if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  var counters = document.querySelectorAll('.counter[data-target]');
-  if (counters.length){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(ent){
-        if (ent.isIntersecting){
-          var t = parseInt(ent.target.getAttribute('data-target')||'0',10);
-          animateCounter(ent.target, t);
-          io.unobserve(ent.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    counters.forEach(function(c){ io.observe(c); });
-  }
-
-  // Reveal animations
-  var animated = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-scale-in-bounce');
-  if (animated.length){
-    animated.forEach(function(el){ el.style.animationPlayState = 'paused'; });
-    var so = new IntersectionObserver(function(entries){
-      entries.forEach(function(ent){
-        if (ent.isIntersecting){ ent.target.style.animationPlayState = 'running'; so.unobserve(ent.target); }
-      });
-    }, { threshold: 0.1 });
-    animated.forEach(function(el){ so.observe(el); });
-  }
-})();
-</script>
+        <!-- Footer & footer-scripts moved to external file to avoid server-side mangling -->
+        <script src="assets/js/footer.js"></script>
 </body>
 </html>
