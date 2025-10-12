@@ -13,6 +13,23 @@
             transition: transform 420ms cubic-bezier(.2,.9,.2,1);
             will-change: transform;
         }
+        /* Readability improvements */
+        html { font-size: 18px; }
+        @media (min-width: 1024px) { html { font-size: 19px; } }
+        body { line-height: 1.7; }
+        .nav-link { font-size: 1rem; }
+
+        /* Hero guaranteed image background */
+        .hero-bg {
+            background-image: url('assets/images/upscalemedia-transformed (1).png');
+            background-size: cover;
+            background-position: center;
+        }
+        .narrative-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+            border: 1px solid rgba(255,255,255,0.12);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.35), inset 0 0 40px rgba(0,212,255,0.08);
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -606,38 +623,54 @@
 
     <!-- Hero Section (updated) -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-      <!-- New video background + fallback image -->
-            <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover parallax-video z-0 opacity-40" autoplay muted loop playsinline preload="metadata" poster="assets/hero-precision.jpg" aria-hidden="true">
-                <!-- Local primary + fallback clips (ensure these files are added to assets/) -->
-                <source src="assets/hero-clip-1.mp4" type="video/mp4">
-                <source src="assets/hero-clip-2.mp4" type="video/mp4">
-                <!-- If video cannot play, poster image will be displayed -->
-            </video>
-
-            <!-- Image fallback (use your provided photo saved as assets/hero-precision.jpg) -->
-            <div id="heroFallback" class="absolute inset-0 hidden z-0 bg-center bg-cover" style="background-image:url('assets/hero-precision.jpg')" role="img" aria-label="ZapToro AI background: precision lead targeting">
-            </div>
-
-      <!-- Readability overlay -->
-      <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary/30 to-black/70 z-10"></div>
-
-      <div class="container mx-auto px-6 relative z-20">
-          <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
-              <!-- Hero Content -->
-              <div class="animate-fade-in-up">
-                  <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
-                      <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
-                      <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
+      <!-- Guaranteed background image (video removed for reliability) -->
+      <div class="absolute inset-0 hero-bg z-0 opacity-40" aria-hidden="true"></div>
+ 
+      <!-- Video overlay (autoplay muted inline) -->
+      <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover parallax-video z-0 opacity-40" autoplay muted loop playsinline preload="auto" poster="assets/images/upscalemedia-transformed (1).png" aria-hidden="true">
+          <source src="assets/video/Untitled%20video%20-%20Made%20with%20Clipchamp%20(13).mp4" type="video/mp4">
+      </video>
+      <!-- Manual play button shown only if autoplay is blocked -->
+      <button id="heroPlayBtn" class="hidden absolute inset-0 z-20 flex items-center justify-center" aria-label="Play hero video">
+          <span class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl">
+              <i class="fas fa-play ml-1" aria-hidden="true"></i>
+          </span>
+      </button>
+ 
+       <!-- Readability overlay -->
+       <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary/30 to-black/70 z-10"></div>
+ 
+       <div class="container mx-auto px-6 relative z-20">
+          <!-- Centered narrative card -->
+          <div class="max-w-3xl mx-auto mb-10">
+              <div class="narrative-card rounded-2xl p-6 md:p-8 text-center animate-fade-in-up">
+                  <h3 class="text-2xl md:text-3xl headline-font text-white mb-4">THE AI THAT NEVER SLEEPS, NEVER LOSES, NEVER STOPS CLOSING.</h3>
+                  <p class="text-gray-300 mb-3">11:47 PM. Lead calls. You're human. They hired someone faster by sunrise.</p>
+                  <p class="text-gray-300 mb-3"><strong>What if you were faster than fast?</strong></p>
+                  <p class="text-gray-300 mb-5">ZapToro AI responds in 60 seconds. Books while you sleep. Closes while you live. 24/7/365.</p>
+                  <div class="flex items-center justify-between flex-col sm:flex-row gap-3">
+                      <a class="bg-accent text-dark px-4 py-2 rounded-lg body-font-bold" href="#contact">UNLOCK 50% OFF FOREVER</a>
+                      <div class="text-xs text-gray-400">17 Founding Partner spots remaining</div>
                   </div>
-                  
-                  <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
-                      ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
-                  </h1>
-                  
-                  <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font delay-05">
-                      The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
-                  </p>
-                  
+              </div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[65vh]">
+               <!-- Hero Content -->
+               <div class="animate-fade-in-up">
+                   <div class="inline-flex items-center bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-scale-in-bounce">
+                       <i class="fas fa-rocket text-primary mr-2 animate-bounce-gentle"></i>
+                       <span class="text-primary body-font-semibold text-sm"><span class="highlight-accent">AI-Powered</span> Lead Generation</span>
+                   </div>
+                   
+                   <h1 class="text-5xl lg:text-7xl headline-font mb-6 leading-tight">
+                       ZAP IN FRESH LEADS WHILE YOUR COMPETITORS SLEEP
+                   </h1>
+                   
+                   <p class="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up body-font delay-05">
+                       The automated prospecting engine that's generated <span class="highlight-success">$50+ million</span> in client revenue using <span class="highlight-primary">24/7 automation</span> and <span class="highlight-accent">instant lead delivery</span>.
+                   </p>
+                   
                   <!-- Benefits -->
                   <div class="grid md:grid-cols-2 gap-4 mb-8 animate-fade-in-up delay-06">
                       <div class="flex items-center space-x-3">
@@ -683,93 +716,60 @@
                       </button>
                   </div>
                   
-                                    <!-- Story / narrative added by user -->
-                                    <div class="mt-8 mb-8 bg-white/5 border border-white/5 rounded-2xl p-6 animate-fade-in-up">
-                                        <h3 class="text-2xl headline-font text-white mb-4">THE AI THAT NEVER SLEEPS, NEVER LOSES, NEVER STOPS CLOSING.</h3>
-                                        <p class="text-gray-300 mb-3">11:47 PM. Lead calls. You're human. They hired someone faster by sunrise.</p>
-                                        <p class="text-gray-300 mb-3"><strong>What if you were faster than fast?</strong></p>
-                                        <p class="text-gray-300 mb-4">ZapToro AI responds in 60 seconds. Books while you sleep. Closes while you live. 24/7/365.</p>
-                                        <div class="flex items-center justify-between mb-4">
-                                            <a class="bg-accent text-dark px-4 py-2 rounded-lg body-font-bold" href="#contact">UNLOCK 50% OFF FOREVER</a>
-                                            <div class="text-xs text-gray-400">17 Founding Partner spots remaining</div>
-                                        </div>
+                                       
+ 
+                                     <!-- Automated Stats -->
+                   <div class="grid grid-cols-3 gap-6 animate-fade-in-up delay-09">
+                       <div class="text-center hover-lift">
+                           <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
+                           <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
+                       </div>
+                       <div class="text-center hover-lift">
+                           <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter delay-02" data-target="150000">0</div>
+                           <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
+                       </div>
+                       <div class="text-center hover-lift">
+                           <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce delay-04">24/7</div>
+                           <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
+                       </div>
+                   </div>
+               </div>
 
-                                        <h4 class="text-xl headline-font text-white mt-4 mb-2">THE BLEEDING</h4>
-                                        <p class="text-gray-300 mb-3"><strong>EVERY HOUR YOU WAIT COSTS $500.</strong></p>
-                                        <p class="text-gray-300 mb-3">7:15 PM Tuesday: Sarah's furnace died. Kids are cold. She calls. You're at dinner. Voicemail. 7:47 PM: Sarah books your competitor's AI receptionist. 9:00 AM Wednesday: You call back. "Someone's already coming." Lost: $847 job.</p>
-                                        <p class="text-gray-300 mb-3">This happens 12-15 times monthly. The texts you answer "later." The forms you check "tomorrow." Each delay is silent revenue assassination. You're not losing to better competitors. You're losing to faster ones.</p>
-
-                                        <h4 class="text-xl headline-font text-white mt-4 mb-2">THE TRANSFORMATION</h4>
-                                        <p class="text-gray-300 mb-3">WAKE UP TO A CALENDAR THAT FILLED ITSELF.</p>
-                                        <p class="text-gray-300 mb-3">2:34 AM: Google ad lead hits. 2:34 AM: ZapToro texts back, assesses problem, checks calendar. 2:37 AM: Thursday 10 AM appointment booked. Confirmation sent. 8:00 AM: You wake to revenue.</p>
-                                        <p class="text-gray-300 mb-3">5:43 PM: Call during traffic. Ring 1: ZapToro answers as your office. 2 minutes: Qualified lead, budget confirmed, CRM updated. Saturday 11 PM: Competitor slides into your customer's DMs. 11:04 PM: ZapToro responds, reinforces relationship, requests review.</p>
-                                    </div>
-
-                                    <!-- Automated Stats -->
-                  <div class="grid grid-cols-3 gap-6 animate-fade-in-up delay-09">
-                      <div class="text-center hover-lift">
-                          <div class="text-3xl headline-font text-success mb-2 animate-scale-in-bounce">$50M+</div>
-                          <div class="text-sm text-gray-400 body-font"><span class="highlight-success">Automated</span> Revenue</div>
-                      </div>
-                      <div class="text-center hover-lift">
-                          <div class="text-3xl headline-font text-accent mb-2 animate-scale-in-bounce counter delay-02" data-target="150000">0</div>
-                          <div class="text-sm text-gray-400 body-font"><span class="highlight-accent">Leads</span> Delivered</div>
-                      </div>
-                      <div class="text-center hover-lift">
-                          <div class="text-3xl headline-font text-warning mb-2 animate-scale-in-bounce delay-04">24/7</div>
-                          <div class="text-sm text-gray-400 body-font"><span class="highlight-warning">Automation</span> Working</div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Hero Media -->
-              <div class="relative animate-fade-in-right delay-03">
-                  <div class="relative">
-                      <!-- Main Hero Image with Enhanced Styling -->
-                      <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
-                          <img 
-                              src="assets/hero-precision.jpg"
-                              alt="ZapToro AI — precision lead targeting, instant conversion"
-                              class="w-full h-auto object-cover"
-                          />
-                          <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
-                          
-                          <!-- Play button overlay for video demo -->
-                          <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform" aria-label="Play demo video" title="Play demo video">
-                      <i class="fas fa-play ml-1" aria-hidden="true"></i>
-                              </button>
-                          </div>
-                      </div>
-                      
-                      <!-- Floating Interactive Cards -->
-                      <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
-                          <div class="flex items-center space-x-3">
-                              <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
-                                  <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
-                              </div>
-                              <div>
-                                  <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
-                                  <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
-                              </div>
-                          </div>
-                      </div>
+               <!-- Hero Media -->
+               <div class="relative animate-fade-in-right delay-03">
+                   <div class="relative">
+                       <!-- Main Hero Image with Enhanced Styling -->
+                       <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-primary/20">
+                           <img 
+                               src="assets/images/upscalemedia-transformed (1).png"
+                               alt="ZapToro AI — precision lead targeting, instant conversion"
+                               class="w-full h-auto object-cover"
+                           />
+                           <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-dark/20 rounded-2xl"></div>
+                           
+                           <!-- Play button overlay for video demo (modal could be added later) -->
+                           <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                   <button class="bg-primary/90 hover:bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center transform hover:scale-110 transition-transform" aria-label="Play demo video" title="Play demo video">
+                       <i class="fas fa-play ml-1" aria-hidden="true"></i>
+                               </button>
+                           </div>
+                       </div>
+                       
+                       <!-- Floating Interactive Cards -->
+                       <div class="absolute -top-6 -right-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift">
+                           <div class="flex items-center space-x-3">
+                               <div class="w-8 h-8 bg-success/20 rounded-lg flex items-center justify-center animate-pulse">
+                                   <i class="fas fa-chart-line text-success text-sm animate-bounce"></i>
+                               </div>
+                               <div>
+                                   <div class="text-white body-font-bold text-sm counter" data-target="247">0%</div>
+                                   <div class="text-gray-400 text-xs body-font"><span class="highlight-success">Conversion</span> Rate</div>
+                               </div>
+                           </div>
+                       </div>
               
                       <!-- Founding Partner / Offer CTA -->
-                      <div class="col-span-2 mt-12">
-                          <div class="bg-gradient-to-r from-accent/10 to-primary/10 border border-white/5 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                              <div>
-                                  <h3 class="text-2xl headline-font text-white mb-2">FOUNDING PARTNER: LIMITED SPOTS</h3>
-                                  <p class="text-gray-300 mb-1">Be among the first 17 businesses to join ZapToro AI at a deeply discounted rate and own the speed advantage.</p>
-                                  <p class="text-gray-400 text-sm">Includes onboarding, priority lead routing, and a custom automation blueprint.</p>
-                              </div>
-                              <div class="flex items-center space-x-4">
-                                  <a href="#contact" class="bg-accent text-dark px-6 py-3 rounded-lg body-font-bold">Apply for Founding Partner</a>
-                                  <a href="#" class="text-sm text-gray-400">Learn more</a>
-                              </div>
-                          </div>
-                      </div>
-
+                      
                       
                       <div class="absolute -bottom-6 -left-6 bg-darkgray/90 backdrop-blur-xl border border-lightgray/30 rounded-xl p-4 animate-float hover-lift delay-1">
                           <div class="flex items-center space-x-3">
@@ -787,14 +787,31 @@
                       <div class="absolute top-1/2 -left-8 w-16 h-16 bg-accent/20 rounded-full animate-float-slow blur-sm"></div>
                       <div class="absolute top-1/4 -right-4 w-12 h-12 bg-primary/30 rounded-full animate-float blur-sm delay-2"></div>
                   </div>
-              </div>
-          </div>
-          
-          <!-- Bottom gradient for smooth section transition -->
-          <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
-      </div>
-    </section>
+               </div>
+           </div>
+           
+           <!-- Bottom gradient for smooth section transition -->
+           <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-darkgray/30 to-transparent z-10"></div>
+       </div>
+     </section>
 
+    <!-- Founding Partner CTA moved out of hero -->
+    <section id="founding-partner" class="py-12 bg-darkgray/40 border-t border-lightgray/10">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-r from-accent/10 to-primary/10 border border-white/5 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-2xl headline-font text-white mb-2">FOUNDING PARTNER: LIMITED SPOTS</h3>
+                    <p class="text-gray-300 mb-1">Be among the first 17 businesses to join ZapToro AI at a deeply discounted rate and own the speed advantage.</p>
+                    <p class="text-gray-400 text-sm">Includes onboarding, priority lead routing, and a custom automation blueprint.</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="bg-accent text-dark px-6 py-3 rounded-lg body-font-bold">Apply for Founding Partner</a>
+                    <a href="#why-zaptoro" class="text-sm text-gray-400">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
     <!-- Why ZapToro AI Section -->
     <section id="why-zaptoro" class="py-20 bg-darkgray/30 relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
