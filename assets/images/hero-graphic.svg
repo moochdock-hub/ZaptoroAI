@@ -1,0 +1,23 @@
+<!-- Abstract AI/automation SVG illustration for hero section -->
+<svg id="hero-graphic" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-0 top-1/2 -translate-y-1/2 w-72 h-72 md:w-[28rem] md:h-[28rem] opacity-60 pointer-events-none select-none z-10">
+  <defs>
+    <radialGradient id="aiGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00FFD0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aiLine" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFD0"/>
+      <stop offset="1" stop-color="#00A3FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="120" fill="url(#aiGlow)"/>
+  <path d="M80 200 Q200 80 320 200" stroke="url(#aiLine)" stroke-width="6" fill="none"/>
+  <path d="M200 80 Q320 200 200 320" stroke="url(#aiLine)" stroke-width="4" fill="none"/>
+  <path d="M200 80 Q80 200 200 320" stroke="url(#aiLine)" stroke-width="4" fill="none"/>
+  <circle cx="200" cy="200" r="40" fill="#00FFD0" fill-opacity="0.15"/>
+  <circle cx="200" cy="200" r="10" fill="#00FFD0"/>
+  <circle cx="80" cy="200" r="8" fill="#00FFD0"/>
+  <circle cx="320" cy="200" r="8" fill="#00FFD0"/>
+  <circle cx="200" cy="80" r="8" fill="#00FFD0"/>
+  <circle cx="200" cy="320" r="8" fill="#00FFD0"/>
+</svg>
