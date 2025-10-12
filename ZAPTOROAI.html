@@ -682,17 +682,15 @@
     <!-- Hero Section (redesigned for clarity and conversion) -->
     <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 section-premium premium-gradient premium-shadow">
       <!-- Single background: video with fallback poster -->
-      <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" autoplay muted loop playsinline preload="auto" poster="assets/images/upscalemedia-transformed (1).png" aria-hidden="true">
-        <source src="assets/video/Untitled%20video%20-%20Made%20with%20Clipchamp%20(13).mp4" type="video/mp4">
-      </video>
-      <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-primary/40 to-black/80 z-10"></div>
+            <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover z-0 opacity-80" autoplay muted loop playsinline preload="auto" poster="assets/images/upscalemedia-transformed (1).png" aria-hidden="true">
+                <source src="assets/video/Untitled%20video%20-%20Made%20with%20Clipchamp%20(13).mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-primary/20 to-black/70 z-10"></div>
+            <!-- Prominent hero image overlay for AI agency branding -->
+            <img src="assets/images/upscalemedia-transformed (1).png" alt="ZapToro AI" class="absolute left-10 bottom-10 w-40 h-40 md:w-64 md:h-64 rounded-2xl shadow-2xl border-4 border-primary z-20 object-cover bg-white/10" loading="lazy" />
                     <div class="container mx-auto px-6 py-24 md:py-36 relative z-20 flex flex-col items-center justify-center text-center gap-6">
                         <!-- Modern AI/automation SVG illustration for hero -->
-                    <img src="assets/images/hero-graphic.svg" alt="AI Automation Graphic" class="absolute right-0 top-1/2 -translate-y-1/2 w-72 h-72 md:w-[28rem] md:h-[28rem] opacity-60 pointer-events-none select-none z-10" loading="lazy" />
-                    <img src="assets/images/hero-graphic-2.svg" alt="AI Automation Graphic 2" class="absolute left-0 top-1/4 w-32 h-32 md:w-48 md:h-48 opacity-40 pointer-events-none select-none z-10" loading="lazy" />
-                    <img src="assets/images/hero-graphic-3.svg" alt="AI Automation Graphic 3" class="absolute left-1/3 bottom-0 w-24 h-24 md:w-40 md:h-40 opacity-30 pointer-events-none select-none z-10" loading="lazy" />
-                    <img src="assets/images/hero-graphic-4.svg" alt="AI Automation Graphic 4" class="absolute right-1/4 top-0 w-20 h-20 md:w-32 md:h-32 opacity-30 pointer-events-none select-none z-10" loading="lazy" />
-                    <img src="assets/images/hero-graphic-5.svg" alt="AI Automation Graphic 5" class="absolute left-10 top-3/4 w-16 h-16 md:w-24 md:h-24 opacity-40 pointer-events-none select-none z-10" loading="lazy" />
+                <!-- Remove abstract SVGs for a more relevant, branded look -->
                         <h1 class="headline-premium text-white mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight animate-fade-in-up drop-shadow-xl">
                             DOMINATE YOUR MARKET. <br class="hidden md:inline">NEVER MISS A LEAD. <br class="hidden md:inline">LET AI CLOSE THE DEALS WHILE YOU SLEEP.
                         </h1>
@@ -1296,7 +1294,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary/10 to-gray-100 relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
@@ -1311,67 +1309,67 @@
                     </p>
                 </div>
                 
-                <div class="bg-white backdrop-blur-xl rounded-2xl p-8 lg:p-12 shadow-2xl border border-gray-100">
+                <div class="bg-white/90 backdrop-blur-xl rounded-2xl p-8 lg:p-12 shadow-2xl border border-primary/20">
                     <div class="grid lg:grid-cols-2 gap-8 items-start">
                         <div>
-                            <h3 class="text-2xl headline-font text-gray-800 mb-6">Get Your Free AI Audit</h3>
-                            <p class="text-gray-600 mb-6 body-font">30-minute strategy call where we analyze your current funnel and show you exactly how to transform your traffic into qualified leads.</p>
+                            <h3 class="text-2xl headline-font text-primary font-extrabold mb-6">Get Your Free AI Audit</h3>
+                            <p class="text-gray-800 mb-6 body-font-bold font-semibold">30-minute strategy call where we analyze your current funnel and show you exactly how to transform your traffic into qualified leads.</p>
                             
                             <div class="space-y-4 mb-8">
                                 <div class="flex items-center">
                                     <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
                                         <i class="fas fa-check text-success text-sm"></i>
                                     </div>
-                                    <span class="text-gray-700 body-font">Complete funnel & lead quality audit</span>
+                                    <span class="text-gray-900 body-font-bold font-semibold">Complete funnel & lead quality audit</span>
                                 </div>
                                 <div class="flex items-center">
                                     <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
                                         <i class="fas fa-check text-success text-sm"></i>
                                     </div>
-                                    <span class="text-gray-700 body-font">Actionable recommendations you can use today</span>
+                                    <span class="text-gray-900 body-font-bold font-semibold">Actionable recommendations you can use today</span>
                                 </div>
                                 <div class="flex items-center">
                                     <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center mr-3">
                                         <i class="fas fa-check text-success text-sm"></i>
                                     </div>
-                                    <span class="text-gray-700 body-font">Custom AI automation strategy for your business</span>
+                                    <span class="text-gray-900 body-font-bold font-semibold">Custom AI automation strategy for your business</span>
                                 </div>
                             </div>
                             
                             <div class="bg-success/10 border border-success/20 rounded-lg p-4">
                                 <div class="flex items-center">
                                     <i class="fas fa-clock text-success mr-2"></i>
-                                    <span class="text-success body-font-bold text-sm">Limited spots available this month</span>
+                                    <span class="text-success body-font-bold text-base font-bold">Limited spots available this month</span>
                                 </div>
                             </div>
                         </div>
                         
                         <form id="auditForm" class="space-y-6" novalidate>
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Full Name *</label>
+                                <label class="block text-base body-font-bold text-primary font-bold mb-2">Full Name *</label>
                                 <input id="name" name="name" type="text" required 
-                                       class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
+                                       class="w-full px-4 py-3 rounded-lg bg-white border-2 border-primary/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors font-semibold text-gray-900" 
                                        placeholder="Enter your full name">
                             </div>
                             
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Business Email *</label>
+                                <label class="block text-base body-font-bold text-primary font-bold mb-2">Business Email *</label>
                                 <input id="email" name="email" type="email" required 
-                                       class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
+                                       class="w-full px-4 py-3 rounded-lg bg-white border-2 border-primary/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors font-semibold text-gray-900" 
                                        placeholder="your.email@company.com">
                             </div>
                             
                             <div>
-                                                               <label class="block text-sm body-font-bold text-gray-700 mb-2">Company Website</label>
+                                <label class="block text-base body-font-bold text-primary font-bold mb-2">Company Website</label>
                                 <input id="website" name="website" type="url" 
-                                       class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
+                                       class="w-full px-4 py-3 rounded-lg bg-white border-2 border-primary/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors font-semibold text-gray-900" 
                                        placeholder="https://yoursite.com">
                             </div>
                             
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Current Monthly Website Traffic</label>
+                                <label class="block text-base body-font-bold text-primary font-bold mb-2">Current Monthly Website Traffic</label>
                                 <label for="trafficSelect" class="sr-only">Current Monthly Website Traffic</label>
-                                <select id="trafficSelect" class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" aria-label="Current Monthly Website Traffic">
+                                <select id="trafficSelect" class="w-full px-4 py-3 rounded-lg bg-white border-2 border-primary/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors font-semibold text-gray-900" aria-label="Current Monthly Website Traffic">
                                     <option>Less than 1,000 visitors</option>
                                     <option>1,000 - 5,000 visitors</option>
                                     <option>5,000 - 25,000 visitors</option>
@@ -1381,21 +1379,21 @@
                             </div>
                             
                             <div>
-                                <label class="block text-sm body-font-bold text-gray-700 mb-2">Biggest Challenge</label>
+                                <label class="block text-base body-font-bold text-primary font-bold mb-2">Biggest Challenge</label>
                                 <textarea id="message" name="message" rows="3" 
-                                          class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors" 
+                                          class="w-full px-4 py-3 rounded-lg bg-white border-2 border-primary/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors font-semibold text-gray-900" 
                                           placeholder="What's your biggest challenge with lead generation right now?"></textarea>
                             </div>
                             
                             <button id="submitBtn" type="submit" 
-                                    class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg body-font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                    class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg body-font-bold text-xl font-extrabold transition-all duration-300 transform hover:scale-105 shadow-lg">
                                 <i class="fas fa-rocket mr-2"></i>
                                 Unleash ZapToro AI - Book My Free Audit
                             </button>
                             
                             <div id="formStatus" class="text-sm text-center"></div>
                             
-                            <p class="text-xs text-gray-500 text-center">
+                            <p class="text-sm text-gray-700 text-center font-semibold">
                                 We respect your privacy. Your information will never be shared.
                             </p>
                         </form>
