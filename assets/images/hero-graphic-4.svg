@@ -1,0 +1,11 @@
+<!-- Abstract AI/automation SVG graphic 4 -->
+<svg id="hero-graphic-4" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-1/4 top-0 w-20 h-20 md:w-32 md:h-32 opacity-30 pointer-events-none select-none z-10">
+  <defs>
+    <radialGradient id="aiGlow4" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00FFD0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#aiGlow4)"/>
+  <circle cx="60" cy="60" r="7" fill="#00FFD0"/>
+</svg>

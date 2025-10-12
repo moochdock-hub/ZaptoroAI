@@ -1,0 +1,12 @@
+<!-- Abstract AI/automation SVG graphic 5 -->
+<svg id="hero-graphic-5" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-10 top-3/4 w-16 h-16 md:w-24 md:h-24 opacity-40 pointer-events-none select-none z-10">
+  <defs>
+    <linearGradient id="aiLine5" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFD0"/>
+      <stop offset="1" stop-color="#00A3FF"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="50" cy="50" rx="40" ry="20" fill="#00A3FF" fill-opacity="0.10"/>
+  <path d="M20 50 Q50 20 80 50" stroke="url(#aiLine5)" stroke-width="3" fill="none"/>
+  <circle cx="50" cy="50" r="6" fill="#00FFD0"/>
+</svg>
