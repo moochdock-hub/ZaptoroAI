@@ -623,8 +623,9 @@
 
     <!-- Hero Section (updated) -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-      <!-- Guaranteed background image (video removed for reliability) -->
-      <div class="absolute inset-0 hero-bg z-0 opacity-40" aria-hidden="true"></div>
+    <!-- Guaranteed background image + explicit fallback element -->
+    <div class="absolute inset-0 hero-bg z-0 opacity-40" aria-hidden="true"></div>
+    <div id="heroFallback" class="hidden absolute inset-0 hero-bg z-0" role="img" aria-label="ZapToro AI background image"></div>
  
       <!-- Video overlay (autoplay muted inline) -->
       <video id="heroVideo" class="absolute inset-0 w-full h-full object-cover parallax-video z-0 opacity-40" autoplay muted loop playsinline preload="auto" poster="assets/images/upscalemedia-transformed (1).png" aria-hidden="true">
@@ -795,22 +796,7 @@
        </div>
      </section>
 
-    <!-- Founding Partner CTA moved out of hero -->
-    <section id="founding-partner" class="py-12 bg-darkgray/40 border-t border-lightgray/10">
-        <div class="container mx-auto px-6">
-            <div class="bg-gradient-to-r from-accent/10 to-primary/10 border border-white/5 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                <div>
-                    <h3 class="text-2xl headline-font text-white mb-2">FOUNDING PARTNER: LIMITED SPOTS</h3>
-                    <p class="text-gray-300 mb-1">Be among the first 17 businesses to join ZapToro AI at a deeply discounted rate and own the speed advantage.</p>
-                    <p class="text-gray-400 text-sm">Includes onboarding, priority lead routing, and a custom automation blueprint.</p>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#contact" class="bg-accent text-dark px-6 py-3 rounded-lg body-font-bold">Apply for Founding Partner</a>
-                    <a href="#why-zaptoro" class="text-sm text-gray-400">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Founding Partner CTA removed per request -->
  
     <!-- Why ZapToro AI Section -->
     <section id="why-zaptoro" class="py-20 bg-darkgray/30 relative overflow-hidden">

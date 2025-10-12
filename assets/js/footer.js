@@ -5,22 +5,22 @@
     var f = document.getElementById('heroFallback');
     var playBtn = document.getElementById('heroPlayBtn');
     function fallback(){ try{ if(v && v.parentNode) v.parentNode.removeChild(v); }catch(e){} if(f) f.classList.remove('hidden'); }
-    if (v && f) {
+    if (v) {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        fallback();
+        if (f) fallback();
       } else {
         // Try autoplay muted; if blocked, reveal play button to start manually
         v.muted = true;
-        v.play().then(function(){ if (playBtn) playBtn.classList.add('hidden'); }).catch(function(){
-          if (playBtn) playBtn.classList.remove('hidden');
-        });
+        v.play()
+          .then(function(){ if (playBtn) playBtn.classList.add('hidden'); })
+          .catch(function(){ if (playBtn) playBtn.classList.remove('hidden'); });
         if (playBtn){
           playBtn.addEventListener('click', function(){
             v.muted = true;
             v.play().then(function(){ playBtn.classList.add('hidden'); }).catch(function(){ /* keep visible */ });
           });
         }
-        ['error','stalled','abort','suspend'].forEach(function(ev){ try{ v.addEventListener(ev, fallback, { once:true }); }catch(e){} });
+        if (f) ['error','stalled','abort','suspend'].forEach(function(ev){ try{ v.addEventListener(ev, fallback, { once:true }); }catch(e){} });
       }
     }
   } catch(e){ console.warn('hero fallback error', e); }
