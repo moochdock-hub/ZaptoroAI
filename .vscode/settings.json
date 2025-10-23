@@ -1,0 +1,9 @@
+{
+  "terminal.integrated.defaultProfile.windows": "pwsh",
+  "terminal.integrated.profiles.windows": {
+    "pwsh": {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "args": []
+    }
+  }
+}
