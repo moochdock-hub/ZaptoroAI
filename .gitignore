@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+
+# Temporary files
+tmp_*.js
+actions_run_*.html
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/settings.json
